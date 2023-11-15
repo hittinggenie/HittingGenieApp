@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.TeeOrToss"
-             Title="TeeOrToss">
+             >
     <VerticalStackLayout Spacing="35">
-        <Label Text="Are you hitting off a tee, hitting front toss, or is someone throwing to you?" />
+        <Label Text="Are you hitting off a tee, hitting front toss, or is someone throwing to you?" Padding="0,25,0,50" />
         <Button x:Name="Tee" Text="Tee" Clicked="Tee_Clicked" />
         <Button x:Name="FrontToss" Text="Front Toss" Clicked="FrontToss_Clicked" />
         <Button x:Name="Overhand" Text="Overhand Batting Practice" Clicked="Overhand_Clicked" />

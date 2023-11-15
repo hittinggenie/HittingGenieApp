@@ -7,23 +7,28 @@ public partial class TeeOrToss : ContentPage
 		InitializeComponent();
 	}
 
-    void Tee_Clicked(System.Object sender, System.EventArgs e)
+    async void Tee_Clicked(System.Object sender, System.EventArgs e)
     {
+        await Navigation.PushAsync(new TeeToMechs());
     }
 
-    void FrontToss_Clicked(System.Object sender, System.EventArgs e)
+    async void FrontToss_Clicked(System.Object sender, System.EventArgs e)
     {
+        await Navigation.PushAsync(new OptionsPage());
     }
 
-    void Overhand_Clicked(System.Object sender, System.EventArgs e)
+    async void Overhand_Clicked(System.Object sender, System.EventArgs e)
     {
+        await Navigation.PushAsync(new OptionsPage());
     }
 
-    void LiveBaseball_Clicked(System.Object sender, System.EventArgs e)
+    async void LiveBaseball_Clicked(System.Object sender, System.EventArgs e)
     {
+        await Navigation.PushAsync(new OptionsPage());
     }
 
-    void LiveSoftball_Clicked(System.Object sender, System.EventArgs e)
+    async void LiveSoftball_Clicked(System.Object sender, System.EventArgs e)
     {
+        await Navigation.PushAsync(new OptionsPage());
     }
 }
