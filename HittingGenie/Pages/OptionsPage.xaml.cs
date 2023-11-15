@@ -10,25 +10,58 @@ public partial class OptionsPage : ContentPage
     async void MentalApproach_Clicked(System.Object sender, System.EventArgs e)
     {
         Constants.OptionType = "Approach";
-        await Navigation.PushAsync(new FocusOnBall());
+
+        if (Constants.GamePractice == "Games")
+        {
+            await Navigation.PushAsync(new FocusOnBall());
+        }
+        else if (Constants.GamePractice == "Practice") 
+        {
+            try { await Navigation.PushAsync(new VideoPages.PracticeVideo()); } catch (Exception ex) { Console.Write(ex); }
+        }
+       
     }
 
     async void Mechanics_Clicked(System.Object sender, System.EventArgs e)
     {
         Constants.OptionType = "Mechanics";
-        await Navigation.PushAsync(new FocusOnBall());
+        if (Constants.GamePractice == "Games")
+        {
+            await Navigation.PushAsync(new FocusOnBall());
+        }
+        else if (Constants.GamePractice == "Practice")
+        {
+            try { await Navigation.PushAsync(new VideoPages.PracticeVideo()); } catch (Exception ex) { Console.Write(ex); }
+        }
+
     }
 
     async void NotSure_Clicked(System.Object sender, System.EventArgs e)
     {
         Constants.OptionType = "NotSure";
-        await Navigation.PushAsync(new FocusOnBall());
+        if (Constants.GamePractice == "Games")
+        {
+            await Navigation.PushAsync(new FocusOnBall());
+        }
+        else if (Constants.GamePractice == "Practice")
+        {
+            try { await Navigation.PushAsync(new VideoPages.PracticeVideo()); } catch (Exception ex) { Console.Write(ex); }
+        }
+
     }
 
 
     async void Timing_Clicked(System.Object sender, System.EventArgs e)
     {
         Constants.OptionType = "Timing";
-        await Navigation.PushAsync(new FocusOnBall());
+        if (Constants.GamePractice == "Games")
+        {
+            await Navigation.PushAsync(new FocusOnBall());
+        }
+        else if (Constants.GamePractice == "Practice")
+        {
+            try { await Navigation.PushAsync(new VideoPages.PracticeVideo()); } catch (Exception ex) { Console.Write(ex); }
+        }
+
     }
 }

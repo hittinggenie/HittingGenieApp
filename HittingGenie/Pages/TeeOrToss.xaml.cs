@@ -29,6 +29,7 @@ public partial class TeeOrToss : ContentPage
     {
         Constants.Baseball = true;
         Constants.Softball = false;
+        Constants.GamePractice = "Games";
         await Navigation.PushAsync(new OptionsPage());
     }
 
@@ -36,6 +37,7 @@ public partial class TeeOrToss : ContentPage
     {
         Constants.Softball = true;
         Constants.Baseball = false;
+        Constants.GamePractice = "Games";
         await Navigation.PushAsync(new OptionsPage());
     }
 }

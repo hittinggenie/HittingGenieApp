@@ -6,7 +6,7 @@ public partial class FocusOnBall : ContentPage
     public FocusOnBall()
     {
         InitializeComponent();
-        if (Constants.OptionType == "Approach" || Constants.OptionType == "Mechanics" || Constants.OptionType == "Timing")
+        if (Constants.OptionType == "Approach"  || Constants.OptionType == "Mechanics" || Constants.OptionType == "Timing")
         {
             Lbl1.Text = "Great, let's work together.";
         }

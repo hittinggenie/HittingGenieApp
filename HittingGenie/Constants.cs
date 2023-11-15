@@ -7,5 +7,6 @@ namespace HittingGenie
         public static bool Baseball { get; set; } = false;
         public static bool Softball { get; set; } = false;
         public static string OptionType { get; set; } = "";
+        public static string GamePractice { get; set; } = "";
     }
 }
