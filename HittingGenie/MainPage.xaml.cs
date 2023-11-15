@@ -8,8 +8,9 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-    void PracticeBtn_Clicked(System.Object sender, System.EventArgs e)
+    async void PracticeBtn_Clicked(System.Object sender, System.EventArgs e)
     {
+        await Navigation.PushAsync(new Pages.TeeOrToss());
     }
 
     async void GamesBtn_Clicked(System.Object sender, System.EventArgs e)

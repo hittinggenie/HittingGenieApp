@@ -2,11 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.OptionsPage"
-             Title="OptionsPage">
-       <StackLayout Orientation="Vertical"  Spacing="15" BackgroundColor="Black"  AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-            <Label  Text="I'm like other hitting coaches except" FontSize="22" />
-            <Label Text="I am your personal hitting genie and I will help you now." FontSize="22"/>
-            <Label Text="What is your wish?" FontSize="22"/>
+             >
+       <StackLayout Orientation="Vertical"  Spacing="25" BackgroundColor="Black"  AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+           <Label Text="What wish do you want me to grant for you?" Padding="0,20,0,120"/>
             <Button Clicked="MentalApproach_Clicked" x:Name="MentalApproach" Text="Fix My APPROACH"  />
             <Button Clicked="Button_Clicked" Text="Fix My TIMING" />
             <Button Clicked="Mechanics_Clicked" x:Name="Mechanics" Text="Fix my MECHANICS" ></Button>
