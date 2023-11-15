@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.OptionsPage"
+             Title="OptionsPage">
+       <StackLayout Orientation="Vertical"  Spacing="15" BackgroundColor="Black"  AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <Label  Text="I'm like other hitting coaches except" FontSize="22" />
+            <Label Text="I am your personal hitting genie and I will help you now." FontSize="22"/>
+            <Label Text="What is your wish?" FontSize="22"/>
+            <Button Clicked="MentalApproach_Clicked" x:Name="MentalApproach" Text="Fix My APPROACH"  />
+            <Button Clicked="Button_Clicked" Text="Fix My TIMING" />
+            <Button Clicked="Mechanics_Clicked" x:Name="Mechanics" Text="Fix my MECHANICS" ></Button>
+            <Button x:Name="NotSure" Clicked="NotSure_Clicked" Text="I'm Not Sure What Needs Fixed" Margin="0,0,0,100"/>
+         </StackLayout>
+</ContentPage>

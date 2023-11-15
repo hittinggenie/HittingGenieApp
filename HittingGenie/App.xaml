@@ -5,11 +5,39 @@
              x:Class="HittingGenie.App">
     <Application.Resources>
         <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
+             <Style TargetType="Button">
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="BorderColor" Value="#8c8c9b" />
+                <Setter Property="BorderWidth" Value="2" />
+                 <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="TextColor" Value="#8c8c9b" />
+                <Setter Property="BackgroundColor" Value="#1c2c4c" />
+                <Setter Property="FontFamily" Value="Arial" />
+                <!-- Add any other common button properties here -->
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <!-- Conditionally set the font size based on screen width -->
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <!-- iPhone SE 3rd gen width -->
+                            <On Platform="iOS" Value="18" />
+                            <!-- Default font size for larger screens -->
+                            <On Platform="*" Value="20" />
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="Title" Value=" "/>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#8c8c9b"/>
+                <Setter Property="FontFamily" Value="Arial" />
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="24"/>
+            </Style>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>
-
