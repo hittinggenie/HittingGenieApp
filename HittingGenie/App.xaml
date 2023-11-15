@@ -30,6 +30,9 @@
                 <Setter Property="BackgroundColor" Value="Black" />
                 <Setter Property="Title" Value=" "/>
             </Style>
+            <Style TargetType="VerticalStackLayout">
+                <Setter Property="Spacing" Value="35"/>
+            </Style>
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="#8c8c9b"/>
                 <Setter Property="FontFamily" Value="Arial" />

@@ -7,19 +7,28 @@ public partial class OptionsPage : ContentPage
 		InitializeComponent();
 	}
 
-    void MentalApproach_Clicked(System.Object sender, System.EventArgs e)
+    async void MentalApproach_Clicked(System.Object sender, System.EventArgs e)
     {
+        Constants.OptionType = "Approach";
+        await Navigation.PushAsync(new FocusOnBall());
     }
 
-    void Mechanics_Clicked(System.Object sender, System.EventArgs e)
+    async void Mechanics_Clicked(System.Object sender, System.EventArgs e)
     {
+        Constants.OptionType = "Mechanics";
+        await Navigation.PushAsync(new FocusOnBall());
     }
 
-    void NotSure_Clicked(System.Object sender, System.EventArgs e)
+    async void NotSure_Clicked(System.Object sender, System.EventArgs e)
     {
+        Constants.OptionType = "NotSure";
+        await Navigation.PushAsync(new FocusOnBall());
     }
 
-    void Button_Clicked(System.Object sender, System.EventArgs e)
+
+    async void Timing_Clicked(System.Object sender, System.EventArgs e)
     {
+        Constants.OptionType = "Timing";
+        await Navigation.PushAsync(new FocusOnBall());
     }
 }

@@ -1,0 +1,23 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.FocusOnBall"
+             BackgroundColor="Black"
+             Title="">
+    <StackLayout BackgroundColor="Black" Orientation="Vertical" Spacing="35">
+        <Label x:Name="Lbl1"
+            Text="Great, let's work together." Padding="0,20,0,0"
+            VerticalOptions="End"
+            TextColor="#8c8c9b"
+            FontAttributes="Bold"
+            FontFamily="Arial"
+            FontSize="24"
+            HorizontalTextAlignment="Center"/>
+
+        <Label x:Name="Lbl2" Text="Do you feel you are 100% focused on the ball?" />
+
+        <Button Clicked="Yes_Clicked" x:Name="Yes" Text="Yes, I'm Super Focused"  VerticalOptions="EndAndExpand" />
+            
+        <Button Clicked="No_Clicked" x:Name="No" Text="No, I Need More Help"  VerticalOptions="CenterAndExpand"/>
+
+    </StackLayout>
+</ContentPage>

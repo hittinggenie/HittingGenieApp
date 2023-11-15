@@ -6,7 +6,7 @@
        <StackLayout Orientation="Vertical"  Spacing="25" BackgroundColor="Black"  AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
            <Label Text="What wish do you want me to grant for you?" Padding="0,20,0,120"/>
             <Button Clicked="MentalApproach_Clicked" x:Name="MentalApproach" Text="Fix My APPROACH"  />
-            <Button Clicked="Button_Clicked" Text="Fix My TIMING" />
+            <Button Clicked="Timing_Clicked" x:Name="Timing" Text="Fix My TIMING" />
             <Button Clicked="Mechanics_Clicked" x:Name="Mechanics" Text="Fix my MECHANICS" ></Button>
             <Button x:Name="NotSure" Clicked="NotSure_Clicked" Text="I'm Not Sure What Needs Fixed" Margin="0,0,0,100"/>
          </StackLayout>

@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.TeeToMechs"
              Title="TeeToMechs">
-    <VerticalStackLayout>
+    <VerticalStackLayout Spacing="50">
         <Label 
             Text="Since you are hitting with a ball on a tee, let's fix your mechanics." />
         <Label Text="Keep in mind my advice is the same as hitting off a pitcher but the ball is at rest on the tee." />
-        <Label Text="Be sure to give yourself the same amount of time loading as you would in a game. Click below for help with mechanics!" />
+        <Label Text="Be sure to give yourself the same amount of time loading as you would in a game. Click below for help with mechanics!" Padding="0,0,0,50" />
         <Button x:Name="GoBtn" Text="Let's Go!" Clicked="GoBtn_Clicked" /> 
     </VerticalStackLayout>
 </ContentPage>
