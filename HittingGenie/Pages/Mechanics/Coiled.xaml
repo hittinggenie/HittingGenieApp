@@ -5,7 +5,7 @@
              Title="Coiled">
     <VerticalStackLayout>
        <Label 
-            Text="Setting your hips turned or 'coiled' slightly toward the catcher will help you store power and help your balance." FontAttributes="Bold" />
+            Text="Turn or 'coil' your hips slightly toward the catcher. You will store power and be balanced." FontAttributes="Bold" />
         
         <Label x:Name="Lbl2" Text="You should feel 'cornered' around your back leg. " FontAttributes="Bold" IsVisible="false"/>
         <Label x:Name="Lbl3" Text="Are your hips set this way?" FontAttributes="Bold" IsVisible="false"/>

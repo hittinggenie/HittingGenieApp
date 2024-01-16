@@ -4,7 +4,7 @@
              x:Class="HittingGenie.Pages.Mechanics.ArmsLoose" Shell.BackgroundColor="Black"
              Title="ArmsLoose">
     <VerticalStackLayout>
-        <Label Text="Perfect. Next, having loose arms allows for a fast, whipping action of the bat. Have the feeling the bat is weightless as you hold it." />
+        <Label Text="Loose arms will give you a fast, whipping action of the bat. Have the feeling the bat is weightless as you hold it." />
         <Label Text="Are your arms loose?" />
         <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" />
         <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked" />

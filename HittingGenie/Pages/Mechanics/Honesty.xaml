@@ -5,9 +5,9 @@
              Title="Honesty">
     <VerticalStackLayout>
          <Label 
-            Text="Thanks for your honesty. Most hitters are 'on' the ground but not 'in' the ground." />
-            <Label x:Name="Lbl2" Text="Be sure the next time you are hitting, to set up your back foot where the weight is in the heel. Your toes should be spread out to also help keep you balanced." IsVisible="false"/>
-            <Label x:Name="Lbl3" Text="You can now save your progress, or would you like me to show you the next step after setting your back foot correctly?" IsVisible="false"/>
+            Text="Thanks for your honesty! Most hitters are 'on' the ground, but you must be 'in' the ground too using it for stability and power." />
+            <Label x:Name="Lbl2" Text="Set up your back foot so the weight is in your heel. Spread your toes out to also help your balance." IsVisible="false"/>
+            <Label x:Name="Lbl3" Text="You can now save your progress or I can show you the next step." IsVisible="false"/>
         <Button x:Name="Navigator" Clicked="Navigator_Clicked" Text="How Else Can I Fix This?"/>
         <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
         <Button x:Name="Save" Text="No. Save My Progress" Clicked="Save_Clicked" IsVisible="false"/>

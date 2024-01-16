@@ -4,8 +4,8 @@
              x:Class="HittingGenie.Pages.Mechanics.ConnectedGround" Shell.BackgroundColor="Black"
              Title="ConnectedGround">
     <VerticalStackLayout>
-      <Label Text="Next, It's important to feel that you are connected to the ground." FontAttributes="Bold" Padding="0,10,0,0"></Label>
-        <Label x:Name="Lbl2" Text="Your back foot should feel the weight is in the heel, and your toes should be spread out to help support you." FontAttributes="Bold" IsVisible="false"/>
+      <Label Text="Next, feel that you are connected to the ground." FontAttributes="Bold" Padding="0,10,0,0"></Label>
+        <Label x:Name="Lbl2" Text="Your back foot should feel the weight is more in your heel. Spread your toes to also help balance." FontAttributes="Bold" IsVisible="false"/>
         <Label x:Name="Lbl3" Text="Is your back foot set this way?" FontAttributes="Bold" IsVisible="false"/>
         <Button x:Name="Navigator" Text="What Does This Mean?" Clicked="Navigator_Clicked"/>
         <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" IsVisible="false"/>

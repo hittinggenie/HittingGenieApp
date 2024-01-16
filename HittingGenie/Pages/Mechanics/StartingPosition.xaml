@@ -5,9 +5,8 @@
              Title="StartingPosition">
     <VerticalStackLayout>
           <Label 
-            Text="Great! You are in a good starting position with your lower body."/>
-       
-        <Label x:Name="Lbl2" Text="Next, you should feel a stretch up through your back as if your upper body is also cornered around your back leg."  IsVisible="false"/>
+            Text="Your lower body is now set!"/>
+        <Label x:Name="Lbl2" Text="Next, feel a stretch up through your back so your upper body is also cornered around your back leg."  IsVisible="false"/>
         <Label x:Name="Lbl3" Text="Do you have that feeling?" IsVisible="false"/>
         <Button x:Name="Navigator" Text="Hooray!" Clicked="Navigator_Clicked" />
         <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" IsVisible="false"/>

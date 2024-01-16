@@ -5,7 +5,7 @@
              x:Class="HittingGenie.Pages.Mechanics.MechanicsVideo"
              Title="MechanicsVideo">
     <VerticalStackLayout>
-        <Label Text="No problem! If you have ever NOT stepped straight to the pitcher and 'pulled your head' off the ball, feeling you are connected by a rope and you are pulling the pitcher to you with your load will correct that too."/> 
+        <Label Text="No problem! If you have ever NOT stepped straight to the pitcher and 'pulled your head' off the ball, feeling you are connected by a rope and that you are pulling the pitcher to you with your load will correct that too."/> 
         
         <Button x:Name="YesBtn" Text="I Understand" Clicked="YesBtn_Clicked" />
         <Button x:Name="NoBtn" Text="My Hitting Still Isn't Right" Clicked="NoBtn_Clicked" />

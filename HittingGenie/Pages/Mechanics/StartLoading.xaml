@@ -4,7 +4,7 @@
              x:Class="HittingGenie.Pages.Mechanics.StartLoading" Shell.BackgroundColor="Black"
              Title="StartLoading">
     <VerticalStackLayout>
-        <Label Text="Well done! When beginning to load, you should begin when the pitcher's knee lifts and is at its highest point." />
+        <Label Text="Well done! When beginning to load, you should begin when the pitcher's lead knee lifts and is at its highest point." />
         <Label Text="Are you doing that correctly?" />
         <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" />
         <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked" />
