@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.VRPHelp.NotSure" Shell.BackgroundColor="Black"
+             Title="NotSure">
+    <VerticalStackLayout>
+        <Label 
+            Text="No Problem! Did you know it's possible to hit the ball to the pull side of the field, but actually be late?"/>
+        <Label Text="Did you know that you could also hit the ball to the opposite field side, but be early?" />
+        <Button x:Name="YesBtn" Text="I Did Know That" Clicked="YesBtn_Clicked" />
+        <Button x:Name="NoBtn" Text="I Didn't Know That" Clicked="NoBtn_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>

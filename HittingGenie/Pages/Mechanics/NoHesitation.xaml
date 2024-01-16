@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Mechanics.NoHesitation" Shell.BackgroundColor="Black"
+             Title="NoHesitation">
+    <VerticalStackLayout>
+        <Label 
+            Text="The only way to feel the feeling I'm suggesting is you stay in motion in your swing without stop or hesitation."  />
+        <Label x:Name="Lbl2" Text="Does this make sense?"  />
+        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+        <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked"/>
+        <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

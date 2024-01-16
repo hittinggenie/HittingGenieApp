@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Mechanics.OneMove" Shell.BackgroundColor="Black"
+             Title="OneMove">
+    <VerticalStackLayout>
+      <Label
+            Text="I'm confident that I can help. When loading you have to think of the swing as 'one move'."  />
+        <Label x:Name="Lbl2" Text="Correct this hesitation in your swing by feeling that your load around your back leg is like pulling the pitcher to you."  IsVisible="false" />
+        <Label x:Name="Lbl3" Text="Does this make sense?"  IsVisible="false"/>
+        <Button x:Name="Navigator" Text="How Can I Correct This?" Clicked="Navigator_Clicked" />
+        <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" IsVisible="false" />
+        <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked" IsVisible="false" />
+        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
@@ -33,34 +33,58 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|AnyCPU'">
+	  <AndroidPackageFormat>apk</AndroidPackageFormat>
+	  <AndroidDexTool>d8</AndroidDexTool>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
-
-		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
-
-		<!-- Images -->
-		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
-
-		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
-
+		<MauiSplashScreen Include="Resources\Images\genie1.png" Color="#FFFFFF" />
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg">
+		  <ForegroundFile>Resources\AppIcon\appiconfg.svg</ForegroundFile>
+		  <Color>#512BD4</Color>
+		</MauiIcon>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="Pages\" />
 	  <None Remove="VideoPages\" />
+	  <None Remove="Pages\VRPHelp\" />
+	  <None Remove="Pages\Mechanics\" />
+	  <None Remove="Resources\Splash\" />
+	  <None Remove="Resources\Splash\HittingGenie6.svg" />
+	  <None Remove="Resources\Raw\AppTurnOfTheBarrelSetsFrontFoot.mp4" />
+	  <None Remove="Resources\Images\" />
+	  <None Remove="Resources\AppIcon\" />
+	  <None Remove="Resources\AppIcon\appiconfg.svg" />
+	  <None Remove="Resources\AppIcon\appicon.svg" />
+	  <None Remove="Resources\Splash\splash.svg" />
+	  <None Remove="Resources\Images\genie1.png" />
+	  <None Remove="Resources\Images\logo.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Pages\" />
 	  <Folder Include="VideoPages\" />
+	  <Folder Include="Pages\VRPHelp\" />
+	  <Folder Include="Pages\Mechanics\" />
+	  <Folder Include="Resources\Splash\" />
+	  <Folder Include="Resources\Images\" />
+	  <Folder Include="Resources\AppIcon\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\AppIcon\appiconfg.svg" />
+	  <BundleResource Include="Resources\Splash\splash.svg" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Maui.MediaElement" Version="2.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\genie1.png" />
 	</ItemGroup>
 </Project>

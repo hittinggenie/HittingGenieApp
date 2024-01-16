@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Mechanics.NoStartingPosition" Shell.BackgroundColor="Black"
+             Title="NoStartingPosition">
+    <VerticalStackLayout>
+       <Label
+            Text="I can help!  Having this feeling up through your back will make it easier to stay loaded and balanced too." />
+        <Label x:Name="Lbl2" Text="Would you like me to show you the next step, or do you want to save your progress?" IsVisible="false"/>
+        <Button x:Name="Navigator" Text="Next" Clicked="Navigator_Clicked" />
+         <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+        <Button x:Name="YesBtn" Text="Yes, Next Step Please!" Clicked="YesBtn_Clicked" IsVisible="false"/>
+        <Button x:Name="SaveBtn" Text="Save My Progress" Clicked="SaveBtn_Clicked" IsVisible="false" />
+    </VerticalStackLayout>
+</ContentPage>

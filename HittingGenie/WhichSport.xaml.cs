@@ -7,15 +7,15 @@ public partial class WhichSport : ContentPage
 		InitializeComponent();
 	}
 
-    void Baseball_Clicked(System.Object sender, System.EventArgs e)
+    async void Baseball_Clicked(System.Object sender, System.EventArgs e)
     {
-        Constants.Baseball = true;
-        Constants.Softball = false;
+        Constants.Sport = "Baseball";
+       try { await Navigation.PushAsync(new Pages.ReadyLoading()); } catch (Exception ex) { Console.Write(ex); }
     }
 
-    void Softball_Clicked(System.Object sender, System.EventArgs e)
+    async void Softball_Clicked(System.Object sender, System.EventArgs e)
     {
-        Constants.Baseball = false;
-        Constants.Softball = true;
+        Constants.Sport = "Softball";
+        try { await Navigation.PushAsync(new Pages.ReadyLoading()); } catch (Exception ex) { Console.Write(ex); }
     }
 }

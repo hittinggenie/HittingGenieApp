@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.WhichSport"
-             Title="WhichSport">
+            >
     <VerticalStackLayout>
         <Label 
             Text="Which sport do you play?"/>
         <Button x:Name="Baseball" Text="Baseball" Clicked="Baseball_Clicked" />
         <Button x:Name="Softball" Text="Softball" Clicked="Softball_Clicked" />
+   <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
     </VerticalStackLayout>
 </ContentPage>

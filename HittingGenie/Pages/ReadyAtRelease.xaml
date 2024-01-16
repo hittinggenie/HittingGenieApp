@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.ReadyAtRelease"
+             Title="ReadyAtRelease">
+    <VerticalStackLayout>
+        <Label x:Name="Lbl1" Text="Try being more 'ready at release'." Padding="25,25,25,25" />
+        <Label x:Name="Lbl2" Text="This means that when the ball is leaving the pitcher's hand, you must feel ready that you are in a good position to swing your bat if you needed to."/>
+        <Button x:Name="Ok" Text="Okay" Clicked="Ok_Clicked" />
+        <Button x:Name="DoesntWork" Text="What if This Doesn't Work?" Clicked="DoesntWork_Clicked" />
+      <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -4,7 +4,8 @@
              x:Class="HittingGenie.Pages.TeeOrToss"
              >
     <VerticalStackLayout Spacing="35">
-        <Label Text="Are you hitting off a tee, hitting front toss, or is someone throwing to you?" Padding="0,25,0,50" />
+        <Label Text="Are you hitting off a tee, hitting front toss, or is someone throwing to you?" Padding="25,50,25,0" />
+        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
         <Button x:Name="Tee" Text="Tee" Clicked="Tee_Clicked" />
         <Button x:Name="FrontToss" Text="Front Toss" Clicked="FrontToss_Clicked" />
         <Button x:Name="Overhand" Text="Overhand Batting Practice" Clicked="Overhand_Clicked" />

@@ -7,7 +7,8 @@ public partial class TeeToMechs : ContentPage
 		InitializeComponent();
 	}
 
-    void GoBtn_Clicked(System.Object sender, System.EventArgs e)
+   async void GoBtn_Clicked(System.Object sender, System.EventArgs e)
     {
+         try { await Navigation.PushAsync(new Mechanics.MechHome()); } catch (Exception ex) { Console.Write(ex); }
     }
 }

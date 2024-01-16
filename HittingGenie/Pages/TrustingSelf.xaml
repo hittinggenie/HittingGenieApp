@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.TrustingSelf"
+             Title="TrustingSelf">
+     <VerticalStackLayout Spacing="35">
+       <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+        <Label Text="Do you feel you are trusting yourself and focusing 100% on the ball, or do you think you are focusing more on you and how to swing?"/>
+        <Button x:Name="FocusedBtn" Text="Focused 100% on the Ball" Clicked="Focused_Clicked"/>
+        <Button x:Name="NotFocused" Text="Thinking About Myself, Not the Ball" Clicked="NotFocused_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

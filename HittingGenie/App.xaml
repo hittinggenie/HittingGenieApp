@@ -5,15 +5,30 @@
              x:Class="HittingGenie.App">
     <Application.Resources>
         <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="Black" /> <!-- Replace with your desired color -->
+                <Setter Property="BackgroundColor" Value="White" />
+            </Style>
+            <Style TargetType="local:AppShell" >
+                <Setter Property="NavigationPage.BackgroundColor" Value="Red" />
+                
+                </Style>
+
+            <Style TargetType="StackLayout" >
+                <Setter Property="BackgroundColor" Value="White" />
+
+            </Style>
+
              <Style TargetType="Button">
                 <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="BorderColor" Value="#8c8c9b" />
+                <Setter Property="WidthRequest" Value="350" />
+                <Setter Property="BorderColor" Value="#FF4E00" />
                 <Setter Property="BorderWidth" Value="2" />
                  <Setter Property="CornerRadius" Value="5" />
-                <Setter Property="TextColor" Value="#8c8c9b" />
-                <Setter Property="BackgroundColor" Value="#1c2c4c" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="Black" />
                 <Setter Property="FontFamily" Value="Arial" />
-                <!-- Add any other common button properties here -->
+                <!-- Add any other common button properties here --> 
                 <Setter Property="FontSize">
                     <Setter.Value>
                         <!-- Conditionally set the font size based on screen width -->
@@ -27,19 +42,23 @@
                 </Setter>
             </Style>
             <Style TargetType="ContentPage">
-                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="BackgroundColor" Value="White" />
                 <Setter Property="Title" Value=" "/>
+                <Setter Property="Shell.BackgroundColor" Value="Black" />
             </Style>
             <Style TargetType="VerticalStackLayout">
                 <Setter Property="Spacing" Value="35"/>
+                <Setter Property="BackgroundColor" Value="White" />
             </Style>
             <Style TargetType="Label">
-                <Setter Property="TextColor" Value="#8c8c9b"/>
+                <Setter Property="Padding" Value="25,20,25,10"/>
+                <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="FontFamily" Value="Arial" />
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
-                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontSize" Value="20"/>
             </Style>
+          
             
         </ResourceDictionary>
     </Application.Resources>

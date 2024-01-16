@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Mechanics.MakeSlower" Shell.BackgroundColor="Black"
+             Title="MakeSlower">
+    <VerticalStackLayout>
+        <Label Text="No problem, I understand why people say this, however, it will actually make you slower. If you load by coiling around the back leg, as long as you continue to do so as you go to swing your bat, you will get the 'whipping the bat' feeling producing an effortless swing."  />
+     <Label x:Name="Lbl2" Text="On video, you will see the bat will actually move first, then the back leg will turn automatically towards the pitcher and your front foot will set down on the ground because of those actions." IsVisible="false" />
+        <Label x:Name="Lbl3" Text="Would you like to see a video showing you how this happens and the benefits?" IsVisible="false" />
+        <Button x:Name="Navigator" Text="How?" Clicked="Navigator_Clicked" />
+        <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" IsVisible="false" />
+        <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked" IsVisible="false" />
+        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+    </VerticalStackLayout>
+</ContentPage>

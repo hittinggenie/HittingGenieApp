@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Mechanics.StepStraight" Shell.BackgroundColor="Black"
+             Title="StepStraight">
+    <VerticalStackLayout>
+        <Label Text="Have you ever NOT stepped straight to the pitcher and 'pulled your head' off the ball? If so, doing this correctly will correct that too! Let's save your progress in case we need to chat again." />
+        <Button x:Name="Save" Text="Save My Progress" Clicked="Save_Clicked" />
+        <Button x:Name="Next" Text="Okay, Next" Clicked="Next_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>

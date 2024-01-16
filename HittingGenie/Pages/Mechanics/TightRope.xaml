@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Mechanics.TightRope" Shell.BackgroundColor="Black"
+             Title="TightRope">
+    <VerticalStackLayout>
+        <Label x:Name="Lbl1" Text="Imagine that you are tightly connected to the pitcher by a rope." Padding="0,10,0,0" />
+        <Label x:Name="Lbl2" Text="When you begin loading,  imagine your load is pulling the pitcher to you." IsVisible="false" Padding="0,0,0,0" />
+        <Label x:Name="Lbl3" Text="Doing this will give you the feeling that you are pulling the ball into the whip of your bat." IsVisible="false" Padding="0,0,0,0" />
+        <Label x:Name="Lbl4" Text="Would you like to see this explained for baseball or softball?" IsVisible="false" />
+        <Button x:Name="MultiStepBtn" Text="Okay, Now What?" Clicked="MultiStepBtn_Clicked" />
+       <Button x:Name="BaseballBtn" Text="Baseball" Clicked="BaseballBtn_Clicked" IsVisible="false" />
+        <Button x:Name="SoftballBtn" Text="Softball" Clicked="SoftballBtn_Clicked" IsVisible="false" />
+        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+    </VerticalStackLayout>
+</ContentPage>

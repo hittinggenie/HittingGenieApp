@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Shell.BackgroundColor="Black"
+             x:Class="HittingGenie.Pages.VRPHelp.VRPGuide">
+    <VerticalStackLayout>
+       <Label x:Name="Lbl1"
+            Text="So, start by focusing on hitting the ball right through the middle of the field, passed the pitcher and into centerfield."/>
+      <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+        <Label x:Name="Lbl2"
+            Text="Did this work? Did you hit the ball harder somewhere? You should feel you saw the ball better and your swing should feel faster if it worked.." />        
+        <Button x:Name="ItWorked" Text="It Worked, but I Could Do Better!" Clicked="ItWorked_Clicked" />
+        <Button x:Name="DidntWork" Text="It Didn't Work" Clicked="DidntWork_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>

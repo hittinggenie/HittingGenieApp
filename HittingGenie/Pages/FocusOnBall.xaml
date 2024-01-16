@@ -3,7 +3,7 @@
              x:Class="HittingGenie.Pages.FocusOnBall"
              BackgroundColor="Black"
              Title="">
-    <StackLayout BackgroundColor="Black" Orientation="Vertical" Spacing="35">
+    <StackLayout Orientation="Vertical" Spacing="35">
         <Label x:Name="Lbl1"
             Text="Great, let's work together." Padding="0,20,0,0"
             VerticalOptions="End"
@@ -14,9 +14,9 @@
             HorizontalTextAlignment="Center"/>
 
         <Label x:Name="Lbl2" Text="Do you feel you are 100% focused on the ball?" />
-
+    <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
         <Button Clicked="Yes_Clicked" x:Name="Yes" Text="Yes, I'm Super Focused"  VerticalOptions="EndAndExpand" />
-            
+       
         <Button Clicked="No_Clicked" x:Name="No" Text="No, I Need More Help"  VerticalOptions="CenterAndExpand"/>
 
     </StackLayout>

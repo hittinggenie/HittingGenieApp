@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.FurtherExplainVideo"
+              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             >
+    <VerticalStackLayout>
+        <Label x:Name="Lbl1" Padding="0,35,0,0"
+            Text="Got it! This is normal and can happen to all of us." />
+        <Label x:Name="Lbl2" Text="It's time to see what you are capable of when giving 100% effort to the ball only." Padding="0,0,0,0"/>
+        <Label x:Name="Lbl3" Text="Would you like me to further explain in a video?" />
+         <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+          <toolkit:MediaElement x:Name="mediaElement" Source="embed://AppAttentionMatchIntention.mp4" MediaEnded="mediaElement_MediaEnded" ShouldShowPlaybackControls="True" IsVisible="false" Aspect="AspectFill" />
+        <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" />
+        <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>

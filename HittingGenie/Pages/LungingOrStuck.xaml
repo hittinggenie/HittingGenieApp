@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.LungingOrStuck" Shell.BackgroundColor="Black"
+             Title="LungingOrStuck">
+     <VerticalStackLayout Spacing="75">
+         <Label x:Name="Lbl1" 
+            Text="Interesting. It's possible you are either lunging forward or feeling stuck back where your swing feels slower. Which one is it?"/>
+     <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+        <Button Clicked="Forward_Clicked" x:Name="Forward" Text="Lunging Forward. I Can't Wait On The Ball."></Button>
+        <Button Clicked="Stuck_Clicked" x:Name="Stuck" Text="Stuck Back. I Feel Too Late Swinging."></Button>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+          
+             x:Class="HittingGenie.Pages.BaseSoftTimingVideo"
+             Title="BaseSoftTimingVideo">
+
+     <VerticalStackLayout Spacing="50">
+       <Label x:Name="Lbl1" />
+        <Label x:Name="Lbl2" Text="Watch the video, then try this and let me know how it goes. Don't forget to save your progress so you can come right back here!" IsVisible="false"/>
+         <toolkit:MediaElement x:Name="mediaElement" Source="embed://AppBaseballHittingTiming.mp4" ShouldShowPlaybackControls="True" Aspect="AspectFill" MediaEnded="mediaElement_MediaEnded" MediaOpened="mediaElement_MediaOpened" />
+        <Label x:Name="Lbl3" Text="Did this work?" IsVisible="false"/>
+        <Button Clicked="Navigate_Clicked" x:Name="Navigate" Text="That Makes Sense"></Button>
+        <Button x:Name="Yes" Clicked="Yes_Clicked" Text="Yes, It Worked! Thanks Hitting Genie!" IsVisible="false"></Button>
+        <Button x:Name="No" Clicked="No_Clicked" Text="I Got Ready Better, but Still Not Great." IsVisible="false"></Button>
+        <Button x:Name="SoftballVideo" Clicked="SoftballVideo_Clicked" Text="Softball Video" IsVisible="false" />
+    </VerticalStackLayout>
+</ContentPage>

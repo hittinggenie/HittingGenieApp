@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.VRPHelp.VideoOption" Shell.BackgroundColor="Black"
+             Title="VideoOption">
+    <VerticalStackLayout Spacing="35">
+        <Label x:Name="Lbl1"
+            Text="If you felt on time and still are having trouble making contact, your mechanics may be what you need me to help with." />
+        <Label x:Name="Lbl2" Text="I recommend checking your timing of when to start getting ready, though." />
+        <Label x:Name="Lbl3" Text="What do you feel we should do?" />
+        <Button x:Name="TimingOrMechs" Text="Check My Timing First" Clicked="TimingOrMechs_Clicked" />
+        <Button x:Name="MechsBtn" Text="Please Help Fix My Mechanics" Clicked="MechsBtn_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>

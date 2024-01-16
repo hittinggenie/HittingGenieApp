@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.VRPHelp.VRPExplained" Shell.BackgroundColor="Black"
+             Title="VRPExplained">
+    <VerticalStackLayout>
+        <Label x:Name="Lbl1" Text="A VRP helps you hit the ball hard somewhere on the field at the moment you are batting.."/>
+         <Label x:Name="Lbl2" Text="It does NOT necessarily have to go to the exact direction you are trying to hit the ball though.." IsVisible="false"/>
+         <Label  x:Name="Lbl3"  IsVisible="false" Text="Having a VRP keeps your focus on the ball and not yourself."/>
+         <Label x:Name="Lbl4"  IsVisible="false" Text="Want to know more about how to best use a VRP?"/>
+         <Button  x:Name="MultiUseBtn" Clicked="MultiUseBtn_Clicked" VerticalOptions="EndAndExpand" />
+       <Button x:Name="NoBtn" Clicked="NoBtn_Clicked" VerticalOptions="EndAndExpand" IsVisible="false" />
+    </VerticalStackLayout>
+</ContentPage>

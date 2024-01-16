@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="HittingGenie.Pages.Mechanics.TurnBarrelVideo" Shell.BackgroundColor="Black"
+             Title="TurnBarrelVideo">
+    <VerticalStackLayout>
+        <Label Text="Watch the video below to proceed." />
+       <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+          <toolkit:MediaElement x:Name="mediaElement"  ShouldShowPlaybackControls="True" Source="embed://BarrelSetsFrontFoot.mp4" MediaEnded="mediaElement_MediaEnded" Aspect="AspectFill" />
+        <Label x:Name="Lbl2" Text="Did this help?" IsVisible="false" />
+        <Button x:Name="Yes" Text="Yes" Clicked="Yes_Clicked" IsVisible="false"/>
+        <Button x:Name="No" Text="No" Clicked="No_Clicked" IsVisible="false" />
+    </VerticalStackLayout>
+</ContentPage>

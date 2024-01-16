@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.VRPHelp.SendToTiming" Shell.BackgroundColor="Black"
+             Title="SendToTiming">
+   <VerticalStackLayout>
+        <Label 
+            Text="This is helpful information!" Padding="0,40,0,0"/>
+        <Label Text="If you feel you're focused 100% on hitting the ball in the direction of your VRP, you are I are actually on the right track."/>
+        <Label Text="It's quite possible this wish you have for me is to help you with your timing"/>
+        <Label Text="You most likely aren't starting to get ready to hit at the correct time." />
+        <Label Text="Click below!"/>
+        <Button x:Name="FixTimingBtn" Text="Fix My Timing!" Clicked="FixTimingBtn_Clicked" />
+        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+    </VerticalStackLayout>
+</ContentPage>

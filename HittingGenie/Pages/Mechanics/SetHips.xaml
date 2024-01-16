@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Mechanics.SetHips" Shell.BackgroundColor="Black"
+             Title="SetHips">
+    <VerticalStackLayout>
+        <Label 
+            Text="Okay, let's do that. Once you set your hips slightly turned or 'coiled' towards the catcher will help you stay balanced when you first start loading to get ready to hit." />
+        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+        <Label Text="On to the next step, click below!"/>
+        <Button x:Name="NextBtn" Text="Next Step" Clicked="NextBtn_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>

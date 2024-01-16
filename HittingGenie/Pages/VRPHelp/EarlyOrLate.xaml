@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.VRPHelp.EarlyOrLate" Shell.BackgroundColor="Black"
+             Title="EarlyOrLate">
+  <VerticalStackLayout Spacing="75" Padding="0,20,0,0">
+        <Label x:Name="Lbl1" Text="Did you feel too early, too late, or on time?"/>
+
+         <Label x:Name="Lbl2" Text="Did This Help?" IsVisible="false"/>
+        <ActivityIndicator x:Name="activityIndicator" IsRunning="False" Color="#8c8c9b" IsVisible="False"/>
+        <Button Clicked="TooEarly_Clicked" x:Name="TooEarly" Text="Too Early"></Button>
+        <Button x:Name="Yes" Clicked="Yes_Clicked" Text="Yes, Thanks Hitting Genie!" IsVisible="false" ></Button>
+        <Button Clicked="TooLate_Clicked" x:Name="TooLate" Text="Too Late"></Button>
+        <Button x:Name="No" Clicked="No_Clicked" Text="No, I'm Not Sure Why" IsVisible="false" ></Button>
+        <Button Clicked="OnTime_Clicked" x:Name="OnTime" Text="On Time"></Button>
+        <Button x:Name="NotSure" Text="I'm Not Sure" Clicked="NotSure_Clicked" IsVisible="false" />
+      <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+    </VerticalStackLayout>
+</ContentPage>

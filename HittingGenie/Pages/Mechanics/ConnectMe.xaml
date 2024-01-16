@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Mechanics.ConnectMe" Shell.BackgroundColor="Black"
+             Title="ConnectMe">
+    <VerticalStackLayout>
+        <Label Text="Remember, hitting a baseball and softball is one of the most difficult tasks in sports." />
+        <Label Text="We are confident our friends at The Hitting Upgrade can be of further assistance." />
+        <Label Text="Would you like me to grant a wish of connecting you?" />
+        <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" />
+        <Button x:Name="NoBtn" Text="No Thanks, I'll Keep Trying!" Clicked="NoBtn_Clicked" />
+        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+    </VerticalStackLayout>
+</ContentPage>

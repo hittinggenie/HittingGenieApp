@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="HittingGenie.Pages.Mechanics.SwingQuicknessVideo" Shell.BackgroundColor="Black"
+             Title="SwingQuicknessVideo">
+    <VerticalStackLayout>
+        <Label x:Name="Lbl1" Text="Okay, here's what you need to do. Loosen up your arms so you feel you can swing the bat so it feels more like a whip." />
+        <Label Text="This short video should help."/>
+          <toolkit:MediaElement x:Name="mediaElement"  ShouldShowPlaybackControls="True" Source="embed://AppSwingQuicknessHelp.mp4" MediaEnded="mediaElement_MediaEnded" Aspect="AspectFill" />
+          <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+        <Label x:Name="Lbl3" Text="Did this help?" IsVisible="false" Padding="0,0,0,0" />
+        <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" IsVisible="false" />
+        <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked" IsVisible="false" />
+    </VerticalStackLayout>
+</ContentPage>

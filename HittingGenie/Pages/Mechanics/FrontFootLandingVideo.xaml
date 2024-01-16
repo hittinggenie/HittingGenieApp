@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="HittingGenie.Pages.Mechanics.FrontFootLandingVideo" Shell.BackgroundColor="Black"
+            >
+    <VerticalStackLayout>
+        <Label Text="I'm sure this can be frustrating especially because people around you want to help you." Padding="25,20,25,0" />
+        <Label Text="I promise what I'm teaching you right now is one of the biggest unknowns in hitting." Padding="25,0,25,0" />
+        <Label x:Name="Lbl3" Text="This next video about your front foot will help you understand this process better. Click below." Padding="25,0,25,0" />
+        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75" />
+         <toolkit:MediaElement x:Name="mediaElement"  ShouldShowPlaybackControls="True" Source="embed://AppFrontFootLanding.mp4" MediaEnded="mediaElement_MediaEnded" Aspect="AspectFill" />
+        <Label x:Name="Lbl4" Text="Did this help?" IsVisible="false" />
+        <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" IsVisible="false" />
+        <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked" IsVisible="false" />
+    </VerticalStackLayout>
+</ContentPage>

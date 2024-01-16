@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="HittingGenie.Pages.VRPHelp.SlowPitcher"
+             Title="SlowPitcher">
+   <VerticalStackLayout>
+        <Label x:Name="Lbl1"
+            Text="Are you facing a really slow pitcher?" />
+      <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+         <toolkit:MediaElement x:Name="mediaElement" Source="embed://AppFacingaSlowPitcher.mp4" MediaEnded="mediaElement_MediaEnded" ShouldShowPlaybackControls="True" Aspect="AspectFill" IsVisible="false" />
+        <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked"  />
+        <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -11,13 +11,13 @@ public partial class MainPage : ContentPage
     async void PracticeBtn_Clicked(System.Object sender, System.EventArgs e)
     {
         Constants.GamePractice = "Practice";
-        await Navigation.PushAsync(new Pages.TeeOrToss());
+       try { await Navigation.PushAsync(new Pages.TeeOrToss()); } catch (Exception ex) { Console.Write(ex); }
     }
 
     async void GamesBtn_Clicked(System.Object sender, System.EventArgs e)
     {
         Constants.GamePractice = "Games";
-        await Navigation.PushAsync(new Pages.OptionsPage());
+       try { await Navigation.PushAsync(new Pages.OptionsPage()); } catch (Exception ex) { Console.Write(ex); }
     }
 }
 

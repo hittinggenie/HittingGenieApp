@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Mechanics.DroppingHands" Shell.BackgroundColor="Black"
+             Title="DroppingHands">
+    <VerticalStackLayout>
+        <Label Text="I see! You may have heard someone say you are dropping your back shoulder or hands." Padding="25,40,25,0" />
+        <Label x:Name="Lbl2" Text="That's true, but what is really causing you to still have a stop in your swing is trying to drive or 'fire' your hips." IsVisible="false" Padding="25,0,25,0" />
+        <Label x:Name="Lbl3" Text="This will actually cause you to slightly stop in your motion and use your arms more in the swing. You will push the bat forward and you will be slower and weaker." IsVisible="false" Padding="25,0,25,0" />
+        <Label x:Name="Lbl4" Text="I will now explain how to correct this issue." IsVisible="false" />
+        <Button x:Name="Stepper" Text="Yes, is This True?" Clicked="Stepper_Clicked" />
+        <Button x:Name="HelpMe" Text="Okay, Help Me Fix It" Clicked="HelpMe_Clicked" IsVisible="false" />
+      <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+    </VerticalStackLayout>
+</ContentPage>

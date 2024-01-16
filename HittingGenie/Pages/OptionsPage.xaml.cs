@@ -13,7 +13,7 @@ public partial class OptionsPage : ContentPage
 
         if (Constants.GamePractice == "Games")
         {
-            await Navigation.PushAsync(new FocusOnBall());
+           try { await Navigation.PushAsync(new FocusOnBall()); } catch (Exception ex) { Console.Write(ex); }
         }
         else if (Constants.GamePractice == "Practice") 
         {
@@ -27,7 +27,7 @@ public partial class OptionsPage : ContentPage
         Constants.OptionType = "Mechanics";
         if (Constants.GamePractice == "Games")
         {
-            await Navigation.PushAsync(new FocusOnBall());
+           try { await Navigation.PushAsync(new FocusOnBall()); } catch (Exception ex) { Console.Write(ex); }
         }
         else if (Constants.GamePractice == "Practice")
         {
@@ -41,7 +41,7 @@ public partial class OptionsPage : ContentPage
         Constants.OptionType = "NotSure";
         if (Constants.GamePractice == "Games")
         {
-            await Navigation.PushAsync(new FocusOnBall());
+           try { await Navigation.PushAsync(new FocusOnBall()); } catch (Exception ex) { Console.Write(ex); }
         }
         else if (Constants.GamePractice == "Practice")
         {
@@ -56,7 +56,7 @@ public partial class OptionsPage : ContentPage
         Constants.OptionType = "Timing";
         if (Constants.GamePractice == "Games")
         {
-            await Navigation.PushAsync(new FocusOnBall());
+           try { await Navigation.PushAsync(new FocusOnBall()); } catch (Exception ex) { Console.Write(ex); }
         }
         else if (Constants.GamePractice == "Practice")
         {

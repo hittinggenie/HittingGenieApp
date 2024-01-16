@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Mechanics.Rhythm" Shell.BackgroundColor="Black"
+             Title="Rhythm">
+    <VerticalStackLayout>
+        <Label Text="Aha! You have a 'stop' or hesitation in your rythym that causes you to hit the ball weak or not at all." />
+        <Label x:Name="Lbl2" Text="Always remember that If you stop, the ball and the pitcher aren't going to wait for you. " IsVisible="false" />
+        <Label x:Name="Lbl3" Text="This makes hitting difficult. Do you want me to show you how to fix this?" IsVisible="false" />
+        <Button x:Name="Navigator" Text="What Do You Mean?" Clicked="Navigator_Clicked"/>
+        <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" IsVisible="false" />
+        <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked" IsVisible="false" />
+        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+    </VerticalStackLayout>
+</ContentPage>

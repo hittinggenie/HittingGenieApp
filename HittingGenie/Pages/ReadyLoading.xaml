@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.ReadyLoading" Shell.BackgroundColor="Black"
+             Title="ReadyLoading">
+    <VerticalStackLayout>
+        <Label x:Name="Lbl1"/>
+   <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+          <Button x:Name="Yes" Text="Yes, I Do That" Clicked="Yes_Clicked"></Button>
+        <Button x:Name="No" Text="No, I Do Not Do That" Clicked="No_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>

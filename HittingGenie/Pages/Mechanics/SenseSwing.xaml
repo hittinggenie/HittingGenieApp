@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Mechanics.SenseSwing" Shell.BackgroundColor="Black"
+             Title="SenseSwing">
+    <VerticalStackLayout>
+        <Label Text="I sense in your swing then that you may not be stepping straight to the pitcher and also pulling your head?" />
+       <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+        <Button x:Name="NotStraight" Text="I'm Not Stepping Straight" Clicked="NotStraight_Clicked"/>
+        <Button x:Name="AmStraight" Text="I'm Stepping Straight" Clicked="AmStraight_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>
