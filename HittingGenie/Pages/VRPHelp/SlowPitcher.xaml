@@ -8,7 +8,7 @@
         <Label x:Name="Lbl1"
             Text="Are you facing a really slow pitcher?" />
       <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
-          <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/1yjTkbHZHAM" WidthRequest="0" HeightRequest="250" IsVisible="false"/>
+          <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/1yjTkbHZHAM?rel=0" WidthRequest="0" HeightRequest="250" IsVisible="false"/>
          <Button x:Name="VideoWatched" Text="I Watched the Video" Clicked="VideoWatched_Clicked" IsVisible="false" />
         <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked"  />
         <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked"/>

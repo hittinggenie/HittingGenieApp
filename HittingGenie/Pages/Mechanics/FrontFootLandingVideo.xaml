@@ -9,7 +9,7 @@
         <Label Text="I promise what I'm teaching you right now is one of the biggest unknowns in hitting." Padding="25,0,25,0" />
         <Label x:Name="Lbl3" Text="This next video about your front foot will help you understand this process better. Click below." Padding="25,0,25,0" />
         <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75" />
-         <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/Ws_NNSFAxo4" WidthRequest="0" HeightRequest="250"/>
+         <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/Ws_NNSFAxo4?rel=0" WidthRequest="0" HeightRequest="250"/>
          <Button x:Name="VideoWatched" Text="I Watched the Video" Clicked="VideoWatched_Clicked" />
         <Label x:Name="Lbl4" Text="Did this help?" IsVisible="false" />
         <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" IsVisible="false" />

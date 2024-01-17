@@ -11,7 +11,7 @@ public partial class BaseSoftTimingVideo : ContentPage
         if (Constants.Sport == "Baseball")
         {
             Lbl1.Text = "Starting to get ready when the pitcher's knee hits its highest point will give you the best chances of seeing the ball and making contact.";
-            videoPlayer.Source = "https://www.youtube.com/embed/TFUGZSElLBA";
+            videoPlayer.Source = "https://www.youtube.com/embed/TFUGZSElLBA?rel=0";
 
 
 
@@ -19,7 +19,7 @@ public partial class BaseSoftTimingVideo : ContentPage
         else if (Constants.Sport == "Softball")
         {
             Lbl1.Text = "Starting to get ready when the pitcher begins coming toward you in their delivery will give you the best chance of seeing the ball your best and making contact.";
-            videoPlayer.Source = "https://www.youtube.com/embed/9FHp5x1HsOk";
+            videoPlayer.Source = "https://www.youtube.com/embed/9FHp5x1HsOk?rel=0";
 
 
         }

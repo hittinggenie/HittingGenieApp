@@ -9,7 +9,7 @@
        <Label x:Name="Lbl1" />
         <Label x:Name="Lbl2" Text="Watch the video below." IsVisible="false"/>
          <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
-         <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/TFUGZSElLBA" IsVisible="false" WidthRequest="0" HeightRequest="250" />
+         <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/TFUGZSElLBA?rel=0" IsVisible="false" WidthRequest="0" HeightRequest="250" />
         <Label x:Name="Lbl3" Text="Did this work?" IsVisible="false"/>
         <Button Clicked="Navigate_Clicked" x:Name="Navigate" Text="That Makes Sense"></Button>
         <Button x:Name="Yes" Clicked="Yes_Clicked" Text="Yes, It Worked! Thanks Hitting Genie!" IsVisible="false"></Button>

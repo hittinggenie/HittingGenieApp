@@ -8,7 +8,7 @@
         <Label x:Name="Lbl1" Text="Okay, loosen your arms. You will now feel you can swing the bat so it feels more like a whip." />
         <Label Text="This short video will help."/>
         <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
-               <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/fiK2xymQics" WidthRequest="0" HeightRequest="250" />
+               <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/fiK2xymQics?rel=0" WidthRequest="0" HeightRequest="250" />
            <Button x:Name="VideoWatched" Text="I Watched the Video" Clicked="VideoWatched_Clicked" />
         <Label x:Name="Lbl3" Text="Did this help?" IsVisible="false" Padding="0,0,0,0" />
         <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" IsVisible="false" />
