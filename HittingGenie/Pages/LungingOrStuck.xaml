@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.LungingOrStuck" Shell.BackgroundColor="Black"
-             Title="LungingOrStuck">
+             Title="">
      <VerticalStackLayout Spacing="75">
          <Label x:Name="Lbl1" 
             Text="Interesting. It's possible you are either lunging forward or feeling stuck back where your swing feels slower. Which one is it?"/>

@@ -7,12 +7,6 @@ public partial class NotSureVideo : ContentPage
         InitializeComponent();
     }
 
-    void ShowMe_Clicked(System.Object sender, System.EventArgs e)
-    {
-        ShowPopupMessage();
-
-    }
-
 
     private async void ShowPopupMessage()
     {
@@ -25,16 +19,26 @@ public partial class NotSureVideo : ContentPage
         }
     }
 
-    void mediaElement_MediaEnded(System.Object sender, System.EventArgs e)
+
+    void ContentPage_Unloaded(System.Object sender, EventArgs e)
     {
-        ShowMe.IsVisible = true;
+        // Stop and cleanup MediaElement when we navigate away
+        videoPlayer.Handler?.DisconnectHandler();
+    }
 
+    protected override void OnSizeAllocated(double width, double height)
+    {
+        base.OnSizeAllocated(width, height);
 
-        void ContentPage_Unloaded(System.Object sender, EventArgs e)
-        {
-            // Stop and cleanup MediaElement when we navigate away
-            mediaElement.Handler?.DisconnectHandler();
-        }
+        double newWidth = width - 50;
+
+        videoPlayer.WidthRequest = newWidth;
+    }
+
+    void VideoWatched_Clicked(System.Object sender, System.EventArgs e)
+    {
+        ShowPopupMessage();
     }
 }
+
 

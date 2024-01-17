@@ -4,10 +4,19 @@ namespace HittingGenie.Pages;
 
 public partial class FurtherExplainVideo : ContentPage
 {
-	public FurtherExplainVideo()
-	{
-		InitializeComponent();
-	}
+    public FurtherExplainVideo()
+    {
+        InitializeComponent();
+    }
+
+    protected override void OnSizeAllocated(double width, double height)
+    {
+        base.OnSizeAllocated(width, height);
+
+        double newWidth = width - 50;
+
+        videoPlayer.WidthRequest = newWidth;
+    }
 
     void NoBtn_Clicked(System.Object sender, System.EventArgs e)
     {
@@ -15,19 +24,21 @@ public partial class FurtherExplainVideo : ContentPage
 
     }
 
+
     void YesBtn_Clicked(System.Object sender, System.EventArgs e)
     {
 
-        mediaElement.IsVisible = true;
+        videoPlayer.IsVisible = true;
         YesBtn.IsVisible = false;
         NoBtn.IsVisible = false;
-        Lbl3.Text = "Please watch this video below to proceed.";
-
+        Lbl1.IsVisible = false;
+        Lbl2.IsVisible = false;
+        Lbl3.Text = "Please watch this video below to proceed, when you are finished press the Next Step button.";
+        NextStep.IsVisible = true;
     }
     void ContentPage_Unloaded(System.Object sender, EventArgs e)
     {
-        // Stop and cleanup MediaElement when we navigate away
-        mediaElement.Handler?.DisconnectHandler();
+        videoPlayer.Handler?.DisconnectHandler();
     }
 
 
@@ -41,7 +52,7 @@ public partial class FurtherExplainVideo : ContentPage
         }
     }
 
-    async void mediaElement_MediaEnded(System.Object sender, System.EventArgs e)
+    async void NextStep_Clicked(System.Object sender, System.EventArgs e)
     {
         try { await Navigation.PushAsync(new SendToMechanics()); } catch (Exception ex) { Console.Write(ex); }
     }

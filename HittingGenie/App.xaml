@@ -47,7 +47,7 @@
                 <Setter Property="Shell.BackgroundColor" Value="Black" />
             </Style>
             <Style TargetType="VerticalStackLayout">
-                <Setter Property="Spacing" Value="35"/>
+                <Setter Property="Spacing" Value="15"/>
                 <Setter Property="BackgroundColor" Value="White" />
             </Style>
             <Style TargetType="Label">

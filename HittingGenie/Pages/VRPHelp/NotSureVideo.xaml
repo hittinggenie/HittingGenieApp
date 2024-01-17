@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             
              x:Class="HittingGenie.Pages.VRPHelp.NotSureVideo" Shell.BackgroundColor="Black"
-             Title="NotSureVideo">
+             Title="">
      <VerticalStackLayout Spacing="45">
         <Label 
             Text="I will show you more about this most overlooked hitting topic." />
         <Label Text="Click below for this secret!" />
-       <toolkit:MediaElement x:Name="mediaElement" Source="embed://AppEarlyOrLate.mp4" MediaEnded="mediaElement_MediaEnded" ShouldShowPlaybackControls="True" Aspect="AspectFill" />
-        
-        <Button x:Name="ShowMe" Text="Okay, I Watched It" Clicked="ShowMe_Clicked" IsVisible="false" />
+        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+        <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/ouhkzqBBlk4" WidthRequest="0" HeightRequest="250" />
+        <Button x:Name="VideoWatched" Text="I Watched the Video" Clicked="VideoWatched_Clicked" />
     </VerticalStackLayout>
 </ContentPage>

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.CommonBelief" Shell.BackgroundColor="Black"
-             Title="CommonBelief">
+             Title="">
     <VerticalStackLayout>
         <Label x:Name="Lbl1" Text="When swinging a bat there is a common belief that the front foot should land completely on the ground and then the hips open and the hands follow." />
       <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>

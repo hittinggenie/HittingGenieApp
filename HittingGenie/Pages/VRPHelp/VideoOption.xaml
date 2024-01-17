@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.VRPHelp.VideoOption" Shell.BackgroundColor="Black"
-             Title="VideoOption">
+             Title="">
     <VerticalStackLayout Spacing="35">
         <Label x:Name="Lbl1"
             Text="If you felt on time and still are having trouble making contact, your mechanics may be what you need me to help with." />

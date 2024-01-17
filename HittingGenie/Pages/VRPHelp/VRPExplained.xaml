@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.VRPHelp.VRPExplained" Shell.BackgroundColor="Black"
-             Title="VRPExplained">
+             Title="">
     <VerticalStackLayout>
         <Label x:Name="Lbl1" Text="A VRP helps you hit the ball hard somewhere on the field at the moment you are batting.."/>
          <Label x:Name="Lbl2" Text="It does NOT necessarily have to go to the exact direction you are trying to hit the ball though.." IsVisible="false"/>

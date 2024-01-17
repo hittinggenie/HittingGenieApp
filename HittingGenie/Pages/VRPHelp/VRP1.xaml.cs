@@ -18,11 +18,6 @@ public partial class VRP1 : ContentPage
         }
     }
 
-    async void mediaElement_MediaEnded(System.Object sender, System.EventArgs e)
-    {
-       try { await Navigation.PushAsync(new VRPGuide());  } catch (Exception ex) { Console.Write(ex); }
-
-    }
 
     void Navigator_Clicked(System.Object sender, System.EventArgs e)
     {
@@ -39,16 +34,17 @@ public partial class VRP1 : ContentPage
     void ContentPage_Unloaded(System.Object sender, EventArgs e)
     {
         // Stop and cleanup MediaElement when we navigate away
-        mediaElement.Handler?.DisconnectHandler();
+        videoPlayer.Handler?.DisconnectHandler();
     }
 
     void YesBtn_Clicked(System.Object sender, System.EventArgs e)
     {
         YesBtn.IsVisible = false;
         NoBtn.IsVisible = false;
-        mediaElement.IsVisible = true;
+        videoPlayer.IsVisible = true;
         Lbl2.IsVisible = false;
-        Lbl3.Text = "Please tap the video in the box below to start the video.";
+        Lbl3.Text = "Please watch the video below.";
+        VideoWatched.IsVisible = true;
     }
 
      void NoBtn_Clicked(System.Object sender, System.EventArgs e)
@@ -56,5 +52,19 @@ public partial class VRP1 : ContentPage
         ShowPopupMessage();
     }
 
-  
+    async void VideoWatched_Clicked(System.Object sender, System.EventArgs e)
+    {
+        try { await Navigation.PushAsync(new VRPGuide()); } catch (Exception ex) { Console.Write(ex); }
+    }
+
+    protected override void OnSizeAllocated(double width, double height)
+    {
+        base.OnSizeAllocated(width, height);
+
+        double newWidth = width - 50;
+
+        videoPlayer.WidthRequest = newWidth;
+    }
+
+
 }

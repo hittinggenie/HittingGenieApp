@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.Machine" Shell.BackgroundColor="Black"
-             Title="Machine">
+             Title="">
     <VerticalStackLayout>
         <Label FontSize="14" Text="Okay, no problem. You must think of everything between you and the pitcher as connected like a machine." />
         <Label FontSize="14" x:Name="Lbl2" Text="Imagine everything the pitcher does is because you are in control of them. You should have the feeling you are both connected tightly by a rope." IsVisible="false"/>
-        <Label FontSize="14" x:Name="Lbl3" Text="It's not you waiting for them to throw it towards homeplate.  When the pitcher moves towards you, it's as if you are making them move toward homeplate to throw the ball to you." IsVisible="false" />
+        <Label FontSize="14" x:Name="Lbl3" Text="It's not you waiting for them to throw it towards home plate. When the pitcher moves towards you, it's as if you are making them move toward home plate to throw the ball to you." IsVisible="false" />
         <Label FontSize="14" x:Name="Lbl4" Text="Does this help you understand better?" IsVisible="false" />
         <Button FontSize="14" x:Name="Navigator" Text="Got It" Clicked="Navigator_Clicked" />
         <Button FontSize="14" x:Name="YesBtn" Text="Yes!" Clicked="YesBtn_Clicked" IsVisible="false"/>

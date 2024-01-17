@@ -7,14 +7,24 @@ public partial class BreatheVideo : ContentPage
 		InitializeComponent();
 	}
 
-    async void mediaElement_MediaEnded(System.Object sender, System.EventArgs e)
-    {
-        try { await Navigation.PushAsync(new AreYouBalanced()); } catch (Exception ex) { Console.Write(ex); }
-    }
 
     void ContentPage_Unloaded(System.Object sender, EventArgs e)
     {
         // Stop and cleanup MediaElement when we navigate away
-        mediaElement.Handler?.DisconnectHandler();
+        videoPlayer.Handler?.DisconnectHandler();
+    }
+
+   async void NextStep_Clicked(System.Object sender, System.EventArgs e)
+    {
+        try { await Navigation.PushAsync(new AreYouBalanced()); } catch (Exception ex) { Console.Write(ex); }
+    }
+
+    protected override void OnSizeAllocated(double width, double height)
+    {
+        base.OnSizeAllocated(width, height);
+
+        double newWidth = width - 50;
+
+        videoPlayer.WidthRequest = newWidth;
     }
 }

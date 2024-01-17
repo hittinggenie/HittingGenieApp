@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.UseWrists"
-             Title="UseWrists">
+             Title="">
     <VerticalStackLayout>
         <Label Text="You must feel that you can use your wrists to have the feeling you are whipping or snapping the barrel through the ball." />
         <Label Text="Do you feel I'm explaining this well?" />

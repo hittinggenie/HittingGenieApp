@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.ArmsLoose" Shell.BackgroundColor="Black"
-             Title="ArmsLoose">
+             Title="">
     <VerticalStackLayout>
         <Label Text="Loose arms will give you a fast, whipping action of the bat. Have the feeling the bat is weightless as you hold it." />
         <Label Text="Are your arms loose?" />

@@ -2,13 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.SoftballRopeVideo"
-               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             Title="SoftballRopeVideo">
+             Title="">
     <VerticalStackLayout>
         <Label 
             Text="Watch this short video to proceed."/>
         <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
-          <toolkit:MediaElement x:Name="mediaElement"  ShouldShowPlaybackControls="True" Source="embed://AppSoftballRope.mp4" MediaEnded="mediaElement_MediaEnded" Aspect="AspectFill" />
+         <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/SF3903amIpU" WidthRequest="0" HeightRequest="250" />
+         <Button x:Name="VideoWatched" Text="I Watched the Video" Clicked="VideoWatched_Clicked" />
         <Label x:Name="Lbl2" Text="Does this help you understand?" IsVisible="false"/>
         <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" IsVisible="false" />
         <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked" IsVisible="false"/>

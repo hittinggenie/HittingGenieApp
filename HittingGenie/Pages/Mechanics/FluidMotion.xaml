@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.FluidMotion" Shell.BackgroundColor="Black"
-             Title="FluidMotion">
+             Title="">
     <VerticalStackLayout>
         <Label Text="If you still don't feel your swing is one fluid motion without a stop, and if your approach and timing are still good, please answer this question - are you trying to fire/drive your hips in your swing?" />
         <Button x:Name="YesBtn" Text="Yes, Drive Hips, Hands Follow" Clicked="YesBtn_Clicked"/>

@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+              
              x:Class="HittingGenie.Pages.BreatheVideo"
-             Title="BreatheVideo">
-       <VerticalStackLayout Spacing="50">
+             Title="">
+       <VerticalStackLayout Spacing="10">
          <Label x:Name="Lbl1"
             Text="Breathing in at the start of loading will help your body move better. Breathing out will help you apply force to the bat and into ball."/>
+         <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
         <Label x:Name="Lbl2" Text=" If you are breathing incorrectly, your body can become tense (tight) and mess up your mechanics. Try breathing in when you load and breathe out when you swing the bat. Watch this video." />
-         <toolkit:MediaElement x:Name="mediaElement" Source="embed://AppBreatheBetterMoveBetter.mp4" MediaEnded="mediaElement_MediaEnded" ShouldShowPlaybackControls="True" Aspect="AspectFill" />
-      
-        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+         <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/r0q1TUxCWBA" HeightRequest="250" WidthRequest="0" />
+        <Button x:Name="NextStep" Text="I Watched the Video" Clicked="NextStep_Clicked" />
+       
     </VerticalStackLayout>
 </ContentPage>

@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+              
              x:Class="HittingGenie.Pages.Mechanics.SwingQuicknessVideo" Shell.BackgroundColor="Black"
-             Title="SwingQuicknessVideo">
+             Title="">
     <VerticalStackLayout>
         <Label x:Name="Lbl1" Text="Okay, loosen your arms. You will now feel you can swing the bat so it feels more like a whip." />
         <Label Text="This short video will help."/>
-          <toolkit:MediaElement x:Name="mediaElement"  ShouldShowPlaybackControls="True" Source="embed://AppSwingQuicknessHelp.mp4" MediaEnded="mediaElement_MediaEnded" Aspect="AspectFill" />
-          <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+               <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/fiK2xymQics" WidthRequest="0" HeightRequest="250" />
+           <Button x:Name="VideoWatched" Text="I Watched the Video" Clicked="VideoWatched_Clicked" />
         <Label x:Name="Lbl3" Text="Did this help?" IsVisible="false" Padding="0,0,0,0" />
         <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" IsVisible="false" />
         <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked" IsVisible="false" />

@@ -7,20 +7,14 @@ public partial class BaseballRopeVideo : ContentPage
 		InitializeComponent();
 	}
 
-    void mediaElement_MediaEnded(System.Object sender, System.EventArgs e)
-    {
-        YesBtn.IsVisible = true;
-        Lbl2.IsVisible = true;
-        NoBtn.IsVisible = true;
 
-    }
     void ContentPage_Unloaded(System.Object sender, EventArgs e)
     {
         // Stop and cleanup MediaElement when we navigate away
-        mediaElement.Handler?.DisconnectHandler();
+        videoPlayer.Handler?.DisconnectHandler();
     }
 
-    async void YesBtn_Clicked(System.Object sender, System.EventArgs e)
+     void YesBtn_Clicked(System.Object sender, System.EventArgs e)
     {
         ShowPopupMessage();
         
@@ -33,11 +27,28 @@ public partial class BaseballRopeVideo : ContentPage
 
     private async void ShowPopupMessage()
     {
-        bool response = await DisplayAlert("Great!", "Just remember, there is no stop in the swing. It's one fluid motion. Let's save your progress in case you'd like to chat again.", "Save", "Cancel");
+        bool response = await DisplayAlert("Great!", "Your swing should be one fluid motion. Let's save your progress in case you'd like to chat again.", "Save", "Cancel");
 
         if (response)
         {
             try { await Navigation.PushAsync(new FluidMotion()); } catch (Exception ex) { Console.Write(ex); }
         }
+    }
+
+    void VideoWatched_Clicked(System.Object sender, System.EventArgs e)
+    {
+        YesBtn.IsVisible = true;
+        Lbl2.IsVisible = true;
+        NoBtn.IsVisible = true;
+        VideoWatched.IsVisible = false;
+    }
+
+    protected override void OnSizeAllocated(double width, double height)
+    {
+        base.OnSizeAllocated(width, height);
+
+        double newWidth = width - 50;
+
+        videoPlayer.WidthRequest = newWidth;
     }
 }

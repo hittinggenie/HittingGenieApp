@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.BreatheCorrectly" Shell.BackgroundColor="Black"
-             Title="BreatheCorrectly">
+             Title="">
     <VerticalStackLayout>
         <Label Text="Are you breathing in when you load and breathing out when you swing the bat?" />
         <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" />

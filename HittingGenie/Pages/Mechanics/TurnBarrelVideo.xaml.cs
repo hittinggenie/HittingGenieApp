@@ -7,13 +7,6 @@ public partial class TurnBarrelVideo : ContentPage
 		InitializeComponent();
 	}
 
-    void mediaElement_MediaEnded(System.Object sender, System.EventArgs e)
-    {
-        Lbl2.IsVisible = true;
-        Yes.IsVisible = true;
-        No.IsVisible = true;
-    }
-
     async void Yes_Clicked(System.Object sender, System.EventArgs e)
     {
         await Navigation.PopToRootAsync();
@@ -27,6 +20,23 @@ public partial class TurnBarrelVideo : ContentPage
     void ContentPage_Unloaded(System.Object sender, EventArgs e)
     {
         // Stop and cleanup MediaElement when we navigate away
-        mediaElement.Handler?.DisconnectHandler();
+        videoPlayer.Handler?.DisconnectHandler();
+    }
+
+    void VideoWatched_Clicked(System.Object sender, System.EventArgs e)
+    {
+        Lbl2.IsVisible = true;
+        Yes.IsVisible = true;
+        No.IsVisible = true;
+        VideoWatched.IsVisible = false;
+    }
+
+    protected override void OnSizeAllocated(double width, double height)
+    {
+        base.OnSizeAllocated(width, height);
+
+        double newWidth = width - 50;
+
+        videoPlayer.WidthRequest = newWidth;
     }
 }

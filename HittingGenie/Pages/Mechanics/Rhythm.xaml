@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.Rhythm" Shell.BackgroundColor="Black"
-             Title="Rhythm">
+             Title="">
     <VerticalStackLayout>
         <Label Text="Aha! You have a 'stop' or hesitation in your rhythm. This causes you to hit the ball weakly or not at all." />
         <Label x:Name="Lbl2" Text="Remember, if you stop, the ball and the pitcher aren't going to wait for you." IsVisible="false" />

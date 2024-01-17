@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit" Shell.BackgroundColor="Black"
+            Shell.BackgroundColor="Black"
              x:Class="HittingGenie.Pages.Mechanics.MechanicsVideo"
-             Title="MechanicsVideo">
+             Title="">
     <VerticalStackLayout>
         <Label Text="No problem! If you have ever NOT stepped straight to the pitcher and 'pulled your head' off the ball, feeling you are connected by a rope and that you are pulling the pitcher to you with your load will correct that too."/> 
         

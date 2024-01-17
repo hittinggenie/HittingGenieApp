@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.SendToMechanics"
-             Title="SendToMechanics">
+             Title="">
     <VerticalStackLayout>
         <Label Text="Your answers to my questions tell me the problem is your mechanics. Let's fix this by clicking here."/>
         <Button x:Name="MechanicsBtn" Text="Fix My Mechanics" Clicked="MechanicsBtn_Clicked" />

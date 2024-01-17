@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.MechEarlyLate" Shell.BackgroundColor="Black"
-             Title="MechEarlyLate">
+             Title="">
     <VerticalStackLayout>
         <Label Text="Does your swing feel early, late or do you feel you have time but just aren't hitting the ball hard?" />
         <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>

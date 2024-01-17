@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.NoStartingPosition" Shell.BackgroundColor="Black"
-             Title="NoStartingPosition">
+             Title="">
     <VerticalStackLayout>
        <Label
             Text="I can help!  Having this feeling up through your back will make it easier to stay loaded and balanced too." />

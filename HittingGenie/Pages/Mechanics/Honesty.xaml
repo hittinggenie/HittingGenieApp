@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.Honesty" Shell.BackgroundColor="Black"
-             Title="Honesty">
+             Title="">
     <VerticalStackLayout>
          <Label 
             Text="Thanks for your honesty! Most hitters are 'on' the ground, but you must be 'in' the ground too using it for stability and power." />

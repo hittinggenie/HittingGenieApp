@@ -12,9 +12,10 @@ public partial class SlowPitcher : ContentPage
         if (Lbl1.Text == "Are you facing a really slow pitcher?")
         {
             Lbl1.Text = "Watch this video on how to best hit slow pitching.";
-            mediaElement.IsVisible = true;
+            videoPlayer.IsVisible = true;
             YesBtn.IsVisible = false;
             NoBtn.IsVisible = false;
+            VideoWatched.IsVisible = true;
         }
         else
         {
@@ -32,7 +33,7 @@ public partial class SlowPitcher : ContentPage
     void ContentPage_Unloaded(System.Object sender, EventArgs e)
     {
         // Stop and cleanup MediaElement when we navigate away
-        mediaElement.Handler?.DisconnectHandler();
+        videoPlayer.Handler?.DisconnectHandler();
     }
 
     void mediaElement_MediaEnded(System.Object sender, System.EventArgs e)
@@ -52,6 +53,25 @@ public partial class SlowPitcher : ContentPage
         {
             await Navigation.PopToRootAsync();
         }
+    }
+
+    void VideoWatched_Clicked(System.Object sender, System.EventArgs e)
+    {
+        Lbl1.IsVisible = true;
+        Lbl1.Text = "Did this help?";
+        YesBtn.IsVisible = true;
+        YesBtn.Text = "Yes, Save My Progress";
+        NoBtn.IsVisible = true;
+        VideoWatched.IsVisible = false;
+    }
+
+    protected override void OnSizeAllocated(double width, double height)
+    {
+        base.OnSizeAllocated(width, height);
+
+        double newWidth = width - 50;
+
+        videoPlayer.WidthRequest = newWidth;
     }
 }
 

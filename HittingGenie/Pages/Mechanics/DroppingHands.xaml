@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.DroppingHands" Shell.BackgroundColor="Black"
-             Title="DroppingHands">
+             Title="">
     <VerticalStackLayout>
         <Label Text="I see! You may have heard someone say you are dropping your back shoulder or hands." Padding="25,40,25,0" />
         <Label x:Name="Lbl2" Text="That's true, but what is really causing you to still have a stop in your swing is trying to drive or 'fire' your hips." IsVisible="false" Padding="25,0,25,0" />

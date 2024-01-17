@@ -1,18 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit" Shell.BackgroundColor="Black"
+             Shell.BackgroundColor="Black"
              x:Class="HittingGenie.Pages.VRPHelp.VRP1"
             >
-    <VerticalStackLayout Padding="20,0,20,0" Spacing="40">
+    <VerticalStackLayout Padding="20,0,20,0" Spacing="20">
         <Label Padding="0,40,0,0"
             Text="A VRP helps you hit the ball hard somewhere on the field at the moment you are batting. It does NOT necessarily have to go to the exact direction you are trying to hit the ball though." />
         <Label x:Name="Lbl2" Text="Having a VRP keeps your focus on the ball and not yourself." IsVisible="false"/>
         <Label x:Name="Lbl3" Text="Want to know more about how to best us a VRP?" IsVisible="false"/>
-        <toolkit:MediaElement x:Name="mediaElement" Source="embed://AppEstablishingVRP.mp4" MediaEnded="mediaElement_MediaEnded" ShouldShowPlaybackControls="True" IsVisible="false" Aspect="AspectFill"  />
+        <WebView x:Name="videoPlayer" IsVisible="false" Source="https://www.youtube.com/embed/pH5RzXRx3ho" WidthRequest="0" HeightRequest="250" />
         <Button x:Name="Navigator" Text="What Does This Do?" Clicked="Navigator_Clicked" />
         <Button x:Name="YesBtn" Text="Yes, Show Me A Video" Clicked="YesBtn_Clicked" IsVisible="false" />
         <Button x:Name="NoBtn" Text="No, I'll Try It Myself" Clicked="NoBtn_Clicked" IsVisible="false" />
        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+         <Button x:Name="VideoWatched" Text="I Watched the Video" IsVisible="false" Clicked="VideoWatched_Clicked" />
+
     </VerticalStackLayout>
 </ContentPage>

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.ReadyRelease2"
-             Title="ReadyRelease2">
+             Title="">
     <VerticalStackLayout>
         <Label 
             Text="If you feel balanced, try being more 'ready at release'." />

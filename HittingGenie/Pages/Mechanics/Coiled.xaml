@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.Coiled" Shell.BackgroundColor="Black"
-             Title="Coiled">
+             Title="">
     <VerticalStackLayout>
        <Label 
             Text="Turn or 'coil' your hips slightly toward the catcher. You will store power and be balanced." FontAttributes="Bold" />

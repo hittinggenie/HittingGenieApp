@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.MakeSlower" Shell.BackgroundColor="Black"
-             Title="MakeSlower">
+             Title="">
     <VerticalStackLayout>
         <Label Text="No problem, I understand why people say this, however, it will actually make you slower. If you load by coiling around the back leg, as long as you continue to do so as you go to swing your bat, you will get the 'whipping the bat' feeling producing an effortless swing."  />
      <Label x:Name="Lbl2" Text="On video, you will see the bat will actually move first, then the back leg will turn automatically towards the pitcher and your front foot will set down on the ground because of those actions." IsVisible="false" />

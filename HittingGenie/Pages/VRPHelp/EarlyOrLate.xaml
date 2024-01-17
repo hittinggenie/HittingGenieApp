@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.VRPHelp.EarlyOrLate" Shell.BackgroundColor="Black"
-             Title="EarlyOrLate">
+             Title="">
   <VerticalStackLayout Spacing="75" Padding="0,20,0,0">
         <Label x:Name="Lbl1" Text="Did you feel too early, too late, or on time?"/>
 

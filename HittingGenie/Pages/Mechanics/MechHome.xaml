@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.MechHome" Shell.BackgroundColor="Black"
-             Title="Batting Mechanics">
+             Title="">
     <VerticalStackLayout>
         <Label Text="You must feel balanced throughout your whole swing. Here is what you need to do." />
        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>

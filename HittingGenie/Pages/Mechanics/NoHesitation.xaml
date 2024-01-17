@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.Pages.Mechanics.NoHesitation" Shell.BackgroundColor="Black"
-             Title="NoHesitation">
+             Title="">
     <VerticalStackLayout>
         <Label 
             Text="The only way to feel the feeling I'm suggesting is you stay in motion in your swing without stop or hesitation."  />
