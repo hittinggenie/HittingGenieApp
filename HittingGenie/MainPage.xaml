@@ -3,13 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HittingGenie.MainPage" Background="White" >
 
+      <StackLayout>
+        <StackLayout BackgroundColor="Black" Padding="5, 5, 5, 5" Spacing="10">
+          <Image x:Name="menu" Source="menu.png" WidthRequest="30" HeightRequest="30" HorizontalOptions="Start">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                    </TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
+              <Button x:Name="Settings" VerticalOptions="Start" HorizontalOptions="Start" IsVisible="false" Text="Settings" Padding="0,10,5,10" WidthRequest="100" Clicked="Settings_Clicked"/>
+        </StackLayout>
+
    <VerticalStackLayout Spacing="35" >
     <Label Text="Greetings. Your wish is my command." />
     <Label Text="Are you currently..." Padding="0,0,0,0"/>
       <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
-        <Button x:Name="PracticeBtn" Text="Practicing" Clicked="PracticeBtn_Clicked"/>
+        <Button x:Name="PracticeBtn"  Text="Practicing" Clicked="PracticeBtn_Clicked"/>
         <Button x:Name="GamesBtn" Text="Playing Games" Clicked="GamesBtn_Clicked"/>
         
     </VerticalStackLayout>
+    </StackLayout>
 </ContentPage>
 

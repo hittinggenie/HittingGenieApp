@@ -67,6 +67,9 @@
 	  <None Remove="Resources\Splash\splash.svg" />
 	  <None Remove="Resources\Images\genie1.png" />
 	  <None Remove="Resources\Images\logo.png" />
+	  <None Remove="Resources\Images\menu.png" />
+	  <None Remove="Pages\Settings\" />
+	  <None Remove="Pages\Profile\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Pages\" />
@@ -76,6 +79,8 @@
 	  <Folder Include="Resources\Splash\" />
 	  <Folder Include="Resources\Images\" />
 	  <Folder Include="Resources\AppIcon\" />
+	  <Folder Include="Pages\Settings\" />
+	  <Folder Include="Pages\Profile\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\AppIcon\appiconfg.svg" />
@@ -86,5 +91,6 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiImage Include="Resources\Images\genie1.png" />
+	  <MauiImage Include="Resources\Images\menu.png" />
 	</ItemGroup>
 </Project>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Profile.ProfileInfo"
+             Title="">
+    <VerticalStackLayout>
+       <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+        <Label x:Name="Name" ></Label>
+           <Label Text="Name" HorizontalOptions="Start" />
+         <Frame BorderColor="#FF4E00" BackgroundColor="Black" CornerRadius="10" Margin="20,0,0,0"  Padding="-15,0,0,0" WidthRequest="320" HorizontalOptions="Start">
+            <Label x:Name="userName" TextColor="White" HorizontalTextAlignment="Start" />
+        </Frame>
+       <Label x:Name="emailLbl" Text="Email" HorizontalOptions="Start" ></Label>
+      <Frame BorderColor="#FF4E00" BackgroundColor="Black" CornerRadius="10" Margin="20,0,0,0"  Padding="-15,0,0,0" WidthRequest="320" HorizontalOptions="Start">
+            <Label x:Name="userEmail" TextColor="White" HorizontalTextAlignment="Start" />
+        </Frame>
+        <Label Text="Phone Number" HorizontalOptions="Start"/>
+            
+      <Frame BorderColor="#FF4E00" BackgroundColor="Black" CornerRadius="10" Margin="20,0,0,0"  Padding="-15,0,0,0" WidthRequest="320" HorizontalOptions="Start">
+            <Label x:Name="userPhone" TextColor="White" HorizontalTextAlignment="Start" />
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

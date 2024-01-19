@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HittingGenie.Pages.Settings.Settings"
+             Title="Settings">
+    <VerticalStackLayout Spacing="45">
+       <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75" />
+        <Button x:Name="EditProfile" Text="View/Edit Profile" Clicked="EditProfile_Clicked" />
+        <Button x:Name="ResetPass" Text="Reset Password" Clicked="ResetPass_Clicked" />
+        <Button x:Name="SignOut" Text="Sign Out" Clicked="SignOut_Clicked" />
+        <Button x:Name="DeleteAcct" Text="Delete Account" Clicked="DeleteAcct_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>

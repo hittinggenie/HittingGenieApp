@@ -23,8 +23,8 @@
                 <Setter Property="FontAttributes" Value="Bold" />
                 <Setter Property="WidthRequest" Value="350" />
                 <Setter Property="BorderColor" Value="#FF4E00" />
-                <Setter Property="BorderWidth" Value="2" />
-                 <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="BorderWidth" Value="3" />
+                 <Setter Property="CornerRadius" Value="15" />
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="BackgroundColor" Value="Black" />
                 <Setter Property="FontFamily" Value="Arial" />
