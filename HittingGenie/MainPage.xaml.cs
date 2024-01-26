@@ -11,9 +11,9 @@ public partial class MainPage : ContentPage
     protected override void OnAppearing()
     {
         base.OnAppearing();
+        logo.FadeTo(1, 10000);
         Settings.IsVisible = false;
     }
-
     async void PracticeBtn_Clicked(System.Object sender, System.EventArgs e)
     {
         Constants.GamePractice = "Practice";
@@ -40,6 +40,8 @@ public partial class MainPage : ContentPage
     {
         try { await Navigation.PushAsync(new Pages.Settings.Settings()); } catch (Exception ex) { Console.Write(ex); }
     }
+
+   
 }
 
 

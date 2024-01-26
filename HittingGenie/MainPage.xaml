@@ -17,7 +17,7 @@
    <VerticalStackLayout Spacing="35" >
     <Label Text="Greetings. Your wish is my command." />
     <Label Text="Are you currently..." Padding="0,0,0,0"/>
-      <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+      <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75" Opacity="0"/>
         <Button x:Name="PracticeBtn"  Text="Practicing" Clicked="PracticeBtn_Clicked"/>
         <Button x:Name="GamesBtn" Text="Playing Games" Clicked="GamesBtn_Clicked"/>
         
