@@ -17,10 +17,7 @@
             <Frame BorderColor="#FF4E00" BackgroundColor="Black" CornerRadius="10" Margin="20,0,0,0" Padding="5,0,0,0" WidthRequest="320" HorizontalOptions="Start">
                 <Entry x:Name="userEmail" Placeholder="johndoe@gmail.com" TextColor="White" HorizontalTextAlignment="Start" />
             </Frame>
-             <Label Text="Phone Number *" HorizontalOptions="Start"/>
-            <Frame BorderColor="#FF4E00" BackgroundColor="Black" CornerRadius="10" Margin="20,0,0,0" Padding="5,0,0,0" WidthRequest="320" HorizontalOptions="Start">
-                <Entry x:Name="userPhone" Placeholder="Phone Number" TextColor="White" HorizontalTextAlignment="Start" />
-            </Frame>
+            
             <Label Text="Password *" HorizontalOptions="Start" />
             <Frame BorderColor="#FF4E00" BackgroundColor="Black" CornerRadius="10" Margin="20,0,0,0" Padding="5,0,0,0" WidthRequest="320" HorizontalOptions="Start">
                 <Entry x:Name="userPass" Placeholder="Password" TextColor="White" HorizontalTextAlignment="Start" />
@@ -29,6 +26,7 @@
              <Frame BorderColor="#FF4E00" BackgroundColor="Black" CornerRadius="10" Margin="20,0,0,0" Padding="5,0, 0,0" WidthRequest="320" HorizontalOptions="Start">
                 <Entry x:Name="confirmPass" Placeholder="Confirm Password" TextColor="White" HorizontalTextAlignment="Start" />
             </Frame>
+            <Label Text="" x:Name="errorText" TextColor="Red" IsVisible="false" />
             
                  <Button x:Name="Register" Text="Sign Up" Margin="10,35,10,10" Clicked="Register_Clicked" />
             <HorizontalStackLayout>

@@ -13,6 +13,7 @@
             <Frame BorderColor="#FF4E00" BackgroundColor="Black" CornerRadius="10" Margin="20,0,0,0" Padding="5,0,0,0" WidthRequest="320" HorizontalOptions="Start">
                 <Entry x:Name="userPass" Placeholder="Password" TextColor="White" HorizontalTextAlignment="Start" />
             </Frame>
+        <Label Text="" x:Name="errorText" TextColor="Red" IsVisible="false" />
           <Button x:Name="SignIn" Text="Login"  Margin="10,35,10,10" Clicked="SignIn_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
