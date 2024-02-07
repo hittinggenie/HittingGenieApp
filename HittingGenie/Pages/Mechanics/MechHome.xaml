@@ -6,7 +6,7 @@
     <VerticalStackLayout>
         <Label Text="You must feel balanced throughout your whole swing. Here is what you need to do." />
        <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
-        <Label Text="In your batting stance, set your head more over top of your back hip. This will make a straight line from your head, through your back hip and down through the heel of your back foot. Think 'Head, Hip, Heel' to remember this step easily." />
+        <Label Text="In your batting stance, feel your head is a little more over your back hip. It doesn't have to be straight above the back hip, but should feel more in line that when you begin to load you'll be more balanced. Think 'Head, Hip, Heel' to remember this step easily." />
         <Button x:Name="Next" Text="Head, Hip, Heel. What's Next?" Clicked="Next_Clicked" />
     </VerticalStackLayout>
 </ContentPage>
