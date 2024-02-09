@@ -10,7 +10,7 @@ public partial class BaseSoftTimingVideo : ContentPage
         InitializeComponent();
         if (Constants.Sport == "Baseball")
         {
-            Lbl1.Text = "Starting to get ready when the pitcher's knee hits its highest point will give you the best chances of seeing the ball and making contact.";
+            Lbl1.Text = "Starting to get ready when the pitcher's lead knee hits its highest point will give you the best chance of seeing the ball your best and making contact. Do this and let me know how it goes. Don't forget to save your progress in case you have another question about this!";
             videoPlayer.Source = "https://www.youtube.com/embed/TFUGZSElLBA?rel=0";
 
 
