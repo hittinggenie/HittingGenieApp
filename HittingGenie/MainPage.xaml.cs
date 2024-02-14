@@ -11,6 +11,8 @@ public partial class MainPage : ContentPage
     protected override void OnAppearing()
     {
         base.OnAppearing();
+        NavigationPage.SetHasBackButton(this, false);
+        NavigationPage.SetHasNavigationBar(this, false);
         logo.FadeTo(1, 10000);
         Settings.IsVisible = false;
     }
@@ -31,10 +33,7 @@ public partial class MainPage : ContentPage
         Settings.IsVisible = !Settings.IsVisible;
     }
 
-    async void EditProfile_Clicked(System.Object sender, System.EventArgs e)
-    {
-        try { await Navigation.PushAsync(new Pages.Profile.ProfileInfo()); } catch (Exception ex) { Console.Write(ex); }
-    }
+    
 
    async void Settings_Clicked(System.Object sender, System.EventArgs e)
     {

@@ -13,6 +13,13 @@ public partial class SignUp : ContentPage
 
     }
 
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        NavigationPage.SetHasNavigationBar(this, false);
+    }
+
     async void Register_Clicked(System.Object sender, System.EventArgs e)
     {
 
@@ -30,14 +37,13 @@ public partial class SignUp : ContentPage
             var user = credential.User;
             if (user.Uid != null)
             {
-                Console.WriteLine("Success.");
-                Constants.Name = userName.Text;
+                await SecureStorage.SetAsync("UID", user.Uid);
                 Constants.Email = userEmail.Text;
                 Constants.IsSignedIn = true;
                 //TODO: we want to write this to db 
-                await DisplayAlert("Success!", $"Your account has been created. Welcome, {userName.Text}!", "OK");
+                await DisplayAlert("Success!", $"Your account has been created. Welcome!", "OK");
                 await authClient.SignInWithEmailAndPasswordAsync(userEmail.Text, userPass.Text);
-                await Navigation.PopToRootAsync();
+                await Navigation.PushAsync(new MainPage());
             }
         } catch (FirebaseAuthException ex)
         {
@@ -61,16 +67,12 @@ public partial class SignUp : ContentPage
 
     async void Login_Clicked(System.Object sender, System.EventArgs e)
     {
-        try { await Navigation.PushAsync(new Login()); } catch (Exception ex) { Console.Write(ex); }
+        try { await Navigation.PushAsync(new Pages.Profile.Login()); } catch (Exception ex) { Console.Write(ex); }
     }
 
     private bool ValidateFields()
     {
-        if (string.IsNullOrWhiteSpace(userName.Text))
-        {
-            errorText.Text = "Please enter your name.";
-            return false;
-        }
+        
 
         if (string.IsNullOrWhiteSpace(userEmail.Text))
         {

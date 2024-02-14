@@ -6,6 +6,14 @@ public partial class Login : ContentPage
 	{
 		InitializeComponent();
 	}
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        // Hide the navigation bar
+        NavigationPage.SetHasNavigationBar(this, true);
+            NavigationPage.SetHasBackButton(this, true);
+    }
 
 
     async void SignIn_Clicked(System.Object sender, System.EventArgs e)
@@ -23,11 +31,11 @@ public partial class Login : ContentPage
             var user = credential.User;
             if (user.Uid != null)
             {
-                Console.WriteLine("Sign in success");
+                await SecureStorage.SetAsync("UID", user.Uid);
                 Constants.Email = userEmail.Text;
                 //TODO: Fetch other user info from database
-                await DisplayAlert("Success", $"You are now signed in. Welcome back, {Constants.Name}!", "Continue");
-                await Navigation.PopToRootAsync();
+                await DisplayAlert("Success!", "You are now signed in. Welcome back!", "Continue");
+                await Navigation.PushAsync(new NavigationPage(new MainPage()));
             }
 
         } catch (FirebaseAuthException ex) {
@@ -73,6 +81,7 @@ public partial class Login : ContentPage
             return false;
         }
     }
+
     private bool ValidateFields()
     {
      
@@ -99,6 +108,16 @@ public partial class Login : ContentPage
 
         return true;
     }
+
+    private void WriteUidToFile(string uid)
+    {
+        string filePath = "userUid.txt";
+
+        // Write the uid to the file
+        using StreamWriter writer = new StreamWriter(filePath);
+        writer.WriteLine(uid);
+    }
+
 }
 
 
