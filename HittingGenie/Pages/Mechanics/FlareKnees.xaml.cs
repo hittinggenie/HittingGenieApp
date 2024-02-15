@@ -7,7 +7,7 @@ public partial class FlareKnees : ContentPage
 		InitializeComponent();
 	}
 
-    void NextStep_Clicked(System.Object sender, System.EventArgs e)
+    async void NextStep_Clicked(System.Object sender, System.EventArgs e)
     {
         try { await Navigation.PushAsync(new Coiled()); } catch (Exception ex) { Console.Write(ex); }
     }
