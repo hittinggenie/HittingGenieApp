@@ -39,7 +39,6 @@ public partial class SignUp : ContentPage
             {
                 await SecureStorage.SetAsync("UID", user.Uid);
                 Constants.Email = userEmail.Text;
-                Constants.IsSignedIn = true;
                 //TODO: we want to write this to db 
                 await DisplayAlert("Success!", $"Your account has been created. Welcome!", "OK");
                 await authClient.SignInWithEmailAndPasswordAsync(userEmail.Text, userPass.Text);

@@ -5,12 +5,12 @@
              
              Title="">
     <VerticalStackLayout>
-        <Label Text="You must begin getting ready when the person throwing the ball to you moves."/>
+        <Label x:Name="Lbl1" Text="" />
          <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
-        <Label Text="When they move, you move." />
-        <Label Text="Watch this video to confirm we are on the same page" />
+        <Label x:Name="Lbl2" Text="When they move, you move." />
+        <Label x:Name="Lbl3" Text="Watch this video to confirm we are on the same page" />
        
-          <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/lAY2OQ5Den0?rel=0" WidthRequest="0" HeightRequest="250" />
+          <WebView x:Name="videoPlayer" WidthRequest="0" HeightRequest="250" />
         <Button x:Name="VideoWatched" Text="I Watched the Video" Clicked="VideoWatched_Clicked" />
     </VerticalStackLayout>
 </ContentPage>

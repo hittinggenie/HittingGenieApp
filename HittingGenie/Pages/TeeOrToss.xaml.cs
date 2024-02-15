@@ -9,19 +9,19 @@ public partial class TeeOrToss : ContentPage
 
     async void Tee_Clicked(System.Object sender, System.EventArgs e)
     {
-        Constants.OptionType = "Tee";
+        Constants.PracticeOption = "Tee";
        try { await Navigation.PushAsync(new TeeToMechs()); } catch (Exception ex) { Console.Write(ex); }
     }
 
     async void FrontToss_Clicked(System.Object sender, System.EventArgs e)
     {
-        Constants.OptionType = "Toss";
+        Constants.PracticeOption = "Toss";
        try { await Navigation.PushAsync(new OptionsPage()); } catch (Exception ex) { Console.Write(ex); }
     }
 
     async void Overhand_Clicked(System.Object sender, System.EventArgs e)
     {
-        Constants.OptionType = "BP";
+        Constants.PracticeOption = "BP";
        try { await Navigation.PushAsync(new OptionsPage()); } catch (Exception ex) { Console.Write(ex); }
     }
 

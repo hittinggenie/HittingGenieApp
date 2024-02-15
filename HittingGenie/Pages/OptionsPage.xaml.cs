@@ -15,12 +15,14 @@ public partial class OptionsPage : ContentPage
         {
            try { await Navigation.PushAsync(new FocusOnBall()); } catch (Exception ex) { Console.Write(ex); }
         }
-        else if (Constants.GamePractice == "Practice") 
+        else if (Constants.GamePractice == "Practice" && Constants.PracticeOption == "Toss") 
         {
             try { await Navigation.PushAsync(new VideoPages.PracticeVideo()); } catch (Exception ex) { Console.Write(ex); }
-        }
+        } 
+
+     }
        
-    }
+    
 
     async void Mechanics_Clicked(System.Object sender, System.EventArgs e)
     {

@@ -4,7 +4,7 @@
              x:Class="HittingGenie.Pages.OptionsPage" Shell.BackgroundColor="Black"
              >
        <StackLayout Orientation="Vertical" BackgroundColor="White"  Spacing="25"  AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-           <Label Text="What wish do you want me to grant for you?" Padding="0,20,0,120"/>
+           <Label Text="What is your wish?" Padding="0,20,0,120"/>
             <Button Clicked="MentalApproach_Clicked" x:Name="MentalApproach" Text="Fix My APPROACH"  />
             <Button Clicked="Timing_Clicked" x:Name="Timing" Text="Fix My TIMING" />
             <Button Clicked="Mechanics_Clicked" x:Name="Mechanics" Text="Fix my MECHANICS" ></Button>
