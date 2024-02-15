@@ -10,7 +10,7 @@
         <Label x:Name="Lbl2" Text="It's time to see what you are capable of when giving 100% effort to the ball only." Padding="0,0,0,0"/>
         <Label x:Name="Lbl3" Text="Would you like me to further explain in a video?" />
          <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
-          <WebView x:Name="videoPlayer" IsVisible="false" Source="https://www.youtube.com/embed/RUu0hl8ddPQ?rel=0" WidthRequest="0" HeightRequest="250" />
+          <WebView x:Name="videoPlayer" IsVisible="false" Source="https://www.youtube.com/embed/Xpw7y7exQ3k?rel=0" WidthRequest="0" HeightRequest="250" />
         <Button x:Name="YesBtn" Text="Yes" Clicked="YesBtn_Clicked" />
         <Button x:Name="NoBtn" Text="No" Clicked="NoBtn_Clicked" />
          <Button x:Name="NextStep" Text="Next Step" IsVisible="false" Clicked="NextStep_Clicked" />

@@ -9,7 +9,7 @@
             Text="A VRP helps you hit the ball hard somewhere on the field at the moment you are batting. It does NOT necessarily have to go to the exact direction you are trying to hit the ball though." />
         <Label x:Name="Lbl2" Text="Having a VRP keeps your focus on the ball and not yourself." IsVisible="false"/>
         <Label x:Name="Lbl3" Text="Want to know more about how to best us a VRP?" IsVisible="false"/>
-        <WebView x:Name="videoPlayer" IsVisible="false" Source="https://www.youtube.com/embed/pH5RzXRx3ho?rel=0" WidthRequest="0" HeightRequest="250" />
+        <WebView x:Name="videoPlayer" IsVisible="false" Source="https://www.youtube.com/embed/CLWS8MeGrCM?rel=0" WidthRequest="0" HeightRequest="250" />
         <Button x:Name="Navigator" Text="What Does This Do?" Clicked="Navigator_Clicked" />
         <Button x:Name="YesBtn" Text="Yes, Show Me A Video" Clicked="YesBtn_Clicked" IsVisible="false" />
         <Button x:Name="NoBtn" Text="No, I'll Try It Myself" Clicked="NoBtn_Clicked" IsVisible="false" />

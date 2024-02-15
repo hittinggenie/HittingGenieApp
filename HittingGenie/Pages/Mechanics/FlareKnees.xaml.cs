@@ -9,5 +9,6 @@ public partial class FlareKnees : ContentPage
 
     void NextStep_Clicked(System.Object sender, System.EventArgs e)
     {
+        try { await Navigation.PushAsync(new Coiled()); } catch (Exception ex) { Console.Write(ex); }
     }
 }
