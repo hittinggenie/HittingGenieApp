@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Maui.Views;
+using Firebase.Auth;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Controls.Compatibility;
 namespace HittingGenie.Pages;
@@ -87,5 +88,10 @@ public partial class BaseSoftTimingVideo : ContentPage
         No.IsVisible = true;
         Lbl2.IsVisible = false;
         VideoWatched.IsVisible = false;
+    }
+
+   async void SaveBtn_Clicked(System.Object sender, System.EventArgs e)
+    {
+        await SecureStorage.SetAsync("SavePlace", "Pages.BaseSoftTimingVideo()");
     }
 }

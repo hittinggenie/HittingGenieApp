@@ -15,5 +15,6 @@
         <Button x:Name="Yes" Clicked="Yes_Clicked" Text="Yes, It Worked! Thanks Hitting Genie!" IsVisible="false"></Button>
         <Button x:Name="No" Clicked="No_Clicked" Text="I Got Ready Better, but Still Not Great." IsVisible="false"></Button>
         <Button x:Name="VideoWatched" Clicked="VideoWatched_Clicked" Text="I Watched the Video" IsVisible="false" />
+         <Button x:Name="SaveBtn" Clicked="SaveBtn_Clicked" Text="Save Progress" />
     </VerticalStackLayout>
 </ContentPage>

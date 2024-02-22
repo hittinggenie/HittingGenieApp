@@ -6,16 +6,21 @@ public partial class App : Application
     {
         InitializeComponent();
         string userUid = SecureStorage.GetAsync("UID").Result;
-
+        string savePlace = SecureStorage.GetAsync("SavePlace").Result;
+        if (!string.IsNullOrEmpty(savePlace))
+        {
+            MainPage = new NavigationPage(new SavePlacePage());
+        } else 
         if (!string.IsNullOrEmpty(userUid))
         {
-            // If the UID exists, set MainPage to the main page
+           
             MainPage = new AppShell();
         }
-        else
-        {
-            // If the UID doesn't exist, set MainPage to a NavigationPage wrapping the login page
+       else  {
+           
             MainPage = new NavigationPage(new Pages.Profile.SignUp());
         }
     }
+
+
 }

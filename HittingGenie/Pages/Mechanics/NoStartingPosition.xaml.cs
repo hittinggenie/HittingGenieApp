@@ -1,4 +1,6 @@
-﻿namespace HittingGenie.Pages.Mechanics;
+﻿using Firebase.Auth;
+
+namespace HittingGenie.Pages.Mechanics;
 
 public partial class NoStartingPosition : ContentPage
 {
@@ -14,7 +16,8 @@ public partial class NoStartingPosition : ContentPage
 
     async void SaveBtn_Clicked(System.Object sender, System.EventArgs e)
     {
-       try { await Navigation.PushAsync(new ArmsLoose()); } catch (Exception ex) { Console.Write(ex); }
+        await SecureStorage.SetAsync("SavePlace", "Pages.Mechanics.ArmsLoose()");
+       
     }
 
     void Navigator_Clicked(System.Object sender, System.EventArgs e)

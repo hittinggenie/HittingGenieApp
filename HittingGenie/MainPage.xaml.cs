@@ -8,13 +8,14 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-    protected override void OnAppearing()
+    protected override async void OnAppearing()
     {
         base.OnAppearing();
         NavigationPage.SetHasBackButton(this, false);
         NavigationPage.SetHasNavigationBar(this, false);
         logo.FadeTo(1, 10000);
-        Settings.IsVisible = false;
+        
+
     }
     async void PracticeBtn_Clicked(System.Object sender, System.EventArgs e)
     {
@@ -28,14 +29,7 @@ public partial class MainPage : ContentPage
        try { await Navigation.PushAsync(new Pages.OptionsPage()); } catch (Exception ex) { Console.Write(ex); }
     }
 
-    void TapGestureRecognizer_Tapped(System.Object sender, Microsoft.Maui.Controls.TappedEventArgs e)
-    {
-        Settings.IsVisible = !Settings.IsVisible;
-    }
-
-    
-
-   async void Settings_Clicked(System.Object sender, System.EventArgs e)
+    async void TapGestureRecognizer_Tapped(System.Object sender, Microsoft.Maui.Controls.TappedEventArgs e)
     {
         try { await Navigation.PushAsync(new Pages.Settings.Settings()); } catch (Exception ex) { Console.Write(ex); }
     }

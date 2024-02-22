@@ -1,4 +1,6 @@
-﻿namespace HittingGenie.Pages.Mechanics;
+﻿using Firebase.Auth;
+
+namespace HittingGenie.Pages.Mechanics;
 
 public partial class Honesty : ContentPage
 {
@@ -25,7 +27,8 @@ public partial class Honesty : ContentPage
 
     async void Save_Clicked(System.Object sender, System.EventArgs e)
     {
-        try { await Navigation.PushAsync(new Coiled()); } catch (Exception ex) { Console.Write(ex); }
+        await SecureStorage.SetAsync("SavePlace", "Pages.Mechanics.Coiled()");
+        
     }
 
     async void YesBtn_Clicked(System.Object sender, System.EventArgs e)

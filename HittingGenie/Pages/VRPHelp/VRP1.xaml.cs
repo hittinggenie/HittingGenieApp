@@ -1,4 +1,6 @@
-﻿namespace HittingGenie.Pages.VRPHelp;
+﻿using Firebase.Auth;
+
+namespace HittingGenie.Pages.VRPHelp;
 
 public partial class VRP1 : ContentPage
 {
@@ -12,8 +14,9 @@ public partial class VRP1 : ContentPage
     {
         bool response = await DisplayAlert("Great!", "Let's make sure we are answering the correct questions so we get you back on track. Save your progress and use a VRP for your next few swings. I'll be here waiting. Let me know if you have any additional questions!", "Ok", "Cancel");
 
-        if (response) // TODO here we need to save progress
+        if (response) 
         {
+            await SecureStorage.SetAsync("SavePlace", "Pages.VRPHelp.VRPGuide()");
             await Navigation.PopToRootAsync();
         }
     }

@@ -1,4 +1,6 @@
-﻿namespace HittingGenie.Pages.VRPHelp;
+﻿using Firebase.Auth;
+
+namespace HittingGenie.Pages.VRPHelp;
 
 public partial class SlowPitcher : ContentPage
 {
@@ -47,10 +49,11 @@ public partial class SlowPitcher : ContentPage
 
     private async void ShowPopupMessage()
     {
-        bool response = await DisplayAlert("Nice!", "Saving your answers and sending you back to the homepage.", "Ok", "Cancel");
+        bool response = await DisplayAlert("Nice!", "Your progress has been saved.", "Ok", "Cancel");
 
         if (response)
         {
+            await SecureStorage.SetAsync("SavePlace", "Pages.VRPHelp.SendToTiming()");
             await Navigation.PopToRootAsync();
         }
     }

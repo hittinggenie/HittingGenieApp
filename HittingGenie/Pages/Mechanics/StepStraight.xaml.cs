@@ -1,4 +1,6 @@
-﻿namespace HittingGenie.Pages.Mechanics;
+﻿using Firebase.Auth;
+
+namespace HittingGenie.Pages.Mechanics;
 
 public partial class StepStraight : ContentPage
 {
@@ -9,7 +11,8 @@ public partial class StepStraight : ContentPage
 
     async void Next_Clicked(System.Object sender, System.EventArgs e)
     {
-        try { await Navigation.PushAsync(new FluidMotion()); } catch (Exception ex) { Console.Write(ex); }
+        await SecureStorage.SetAsync("SavePlace", "Pages.Mechanics.FluidMotion()");
+       
     }
 
     async void Save_Clicked(System.Object sender, System.EventArgs e)

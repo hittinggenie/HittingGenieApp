@@ -11,7 +11,7 @@
                     </TapGestureRecognizer>
                 </Image.GestureRecognizers>
             </Image>
-              <Button x:Name="Settings" VerticalOptions="Start" HorizontalOptions="Start" IsVisible="false" Text="Settings" Padding="0,10,5,10" WidthRequest="100" Clicked="Settings_Clicked"/>
+           
         </StackLayout>
 
    <VerticalStackLayout Spacing="35" >

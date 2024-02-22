@@ -1,4 +1,6 @@
-﻿namespace HittingGenie.Pages.VRPHelp;
+﻿using Firebase.Auth;
+
+namespace HittingGenie.Pages.VRPHelp;
 
 public partial class NotSureVideo : ContentPage
 {
@@ -14,7 +16,8 @@ public partial class NotSureVideo : ContentPage
 
         if (response)
         {
-            try { await Navigation.PushAsync(new EarlyOrLate()); } catch (Exception ex) { Console.Write(ex); }
+            await SecureStorage.SetAsync("SavePlace", "Pages.VRPHelp.EarlyOrLate()");
+            
 
         }
     }
