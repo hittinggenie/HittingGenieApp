@@ -1,15 +1,14 @@
 ﻿using Firebase.Auth;
 using Firebase.Auth.Providers;
-using System;
+using Firebase.Database;
 
 public class FirebaseSingleton
 {
     private static readonly FirebaseSingleton instance = new();
 
-    private FirebaseAuthConfig config;
-
+    private FirebaseAuthConfig authConfig;
     private FirebaseAuthClient authClient;
-
+    private FirebaseClient firebaseClient;
 
     static FirebaseSingleton()
     {
@@ -17,7 +16,8 @@ public class FirebaseSingleton
 
     private FirebaseSingleton()
     {
-        config = new FirebaseAuthConfig
+        // Configure Firebase Authentication
+        authConfig = new FirebaseAuthConfig
         {
             ApiKey = "AIzaSyBPytwQQfv4DfykCVfOFRjP0bizx_0_-k8",
             AuthDomain = "hitting-genie.firebaseapp.com",
@@ -27,7 +27,10 @@ public class FirebaseSingleton
             }
         };
 
-        authClient = new FirebaseAuthClient(config);
+        authClient = new FirebaseAuthClient(authConfig);
+
+        // Configure Firebase Realtime Database
+        firebaseClient = new FirebaseClient("https://hitting-genie-default-rtdb.firebaseio.com");
     }
 
     public static FirebaseSingleton Instance
@@ -43,6 +46,14 @@ public class FirebaseSingleton
         get
         {
             return authClient;
+        }
+    }
+
+    public FirebaseClient FirebaseClient
+    {
+        get
+        {
+            return firebaseClient;
         }
     }
 }

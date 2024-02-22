@@ -13,6 +13,7 @@ public partial class Login : ContentPage
         // Hide the navigation bar
         NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, true);
+        
     }
 
 
@@ -109,15 +110,15 @@ public partial class Login : ContentPage
         return true;
     }
 
-    private void WriteUidToFile(string uid)
+    async void TapGestureRecognizer_Tapped(System.Object sender, Microsoft.Maui.Controls.TappedEventArgs e)
     {
-        string filePath = "userUid.txt";
-
-        // Write the uid to the file
-        using StreamWriter writer = new StreamWriter(filePath);
-        writer.WriteLine(uid);
+        try { await Navigation.PushAsync(new ForgotPassword()); } catch (Exception ex) { Console.Write(ex); }
     }
 
+    async void GoBack_Clicked(System.Object sender, System.EventArgs e)
+    {
+        try { await Navigation.PopAsync(); } catch (Exception ex) { Console.Write(ex); }
+    }
 }
 
 

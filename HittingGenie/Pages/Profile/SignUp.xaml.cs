@@ -1,6 +1,7 @@
 ﻿namespace HittingGenie.Pages.Profile;
 using Firebase.Auth;
 using Firebase.Auth.Providers;
+using Firebase.Database;
 
 
 public partial class SignUp : ContentPage
@@ -39,10 +40,10 @@ public partial class SignUp : ContentPage
             {
                 await SecureStorage.SetAsync("UID", user.Uid);
                 Constants.Email = userEmail.Text;
-                //TODO: we want to write this to db 
-                await DisplayAlert("Success!", $"Your account has been created. Welcome!", "OK");
+                await WriteUserDataToDatabase(user.Uid, userEmail.Text);
+                await DisplayAlert("Success!", "Your account has been created. Welcome!", "OK");
                 await authClient.SignInWithEmailAndPasswordAsync(userEmail.Text, userPass.Text);
-                await Navigation.PushAsync(new MainPage());
+                await Navigation.PushAsync(new NavigationPage(new MainPage()));
             }
         } catch (FirebaseAuthException ex)
         {
@@ -113,6 +114,27 @@ public partial class SignUp : ContentPage
         catch
         {
             return false;
+        }
+    }
+
+    async Task WriteUserDataToDatabase(string uid, string email)
+    {
+        try
+        {
+            var firebaseClient = FirebaseSingleton.Instance.FirebaseClient;
+
+            // Define the path where you want to store user data
+            var path = $"mobileUsers/{uid}/email";
+
+            // Write user email to the database
+            await firebaseClient
+                .Child(path)
+                .PutAsync(email);
+        }
+        catch (Exception ex)
+        {
+            // Handle any errors
+            Console.WriteLine($"Error writing user data to database: {ex.Message}");
         }
     }
 }
