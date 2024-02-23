@@ -4,10 +4,13 @@
              x:Class="HittingGenie.Pages.Mechanics.FlareKnees"
              Title="FlareKnees">
         <VerticalStackLayout>
-      <Label Text="Next flare your knees slightly outward to help you feel stronger and connected to the ground." FontAttributes="Bold" Padding="0,10,0,0"></Label>
-             <Label Text="Here's a video to help should you need it.." FontAttributes="Bold" Padding="0,10,0,0"></Label>
-       <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
-             <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/CR60O8qba9s?rel=0"  WidthRequest="0" HeightRequest="250" />
-             <Button x:Name="NextStep" Text="Next Step" Clicked="NextStep_Clicked" />
+      <VerticalStackLayout>
+           <Label Text="Next flare your knees slightly outward to help you feel stronger and connected to the ground." FontAttributes="Bold" Padding="10,10,0,0"></Label>
+          <Label Text="Here's a video to help should you need it..." FontAttributes="Bold" Padding="10,10,0,0"></Label>
+           <Image x:Name="logo" Source="genie1.png" WidthRequest="75" HeightRequest="75"/>
+       <WebView x:Name="videoPlayer" Source="https://www.youtube.com/embed/CR60O8qba9s?rel=0"  WidthRequest="0" HeightRequest="250" />
+       
+                    <Button x:Name="NextStep" Text="Next Step" Clicked="NextStep_Clicked" />
+    </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

@@ -26,7 +26,7 @@ public partial class ConnectedGround : ContentPage
 
     async void YesBtn_Clicked(System.Object sender, System.EventArgs e)
     {
-        try { await Navigation.PushAsync(new Coiled()); } catch (Exception ex) { Console.Write(ex); }
+        try { await Navigation.PushAsync(new FlareKnees()); } catch (Exception ex) { Console.Write(ex); }
 
     }
 
